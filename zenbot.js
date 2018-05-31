@@ -41,7 +41,6 @@ boot(function (err, zenbot) {
         console.log('Invalid command: ' + cmd)
         program.help()
       })
-
     program.parse(process.argv)
   })
 })

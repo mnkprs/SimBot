@@ -6,7 +6,6 @@ c.mongo.db = 'zenbot4'
 
 // Must provide EITHER c.mongo.connectionString OR c.mongo.host,port,username,password
 // c.mongo.connectionString = 'mongodb://u:p@host/db?params'
-
 // The following is not needed when c.mongo.connectionString is provided:
 c.mongo.host = process.env.MONGODB_PORT_27017_TCP_ADDR || 'localhost'
 c.mongo.port = 27017
@@ -33,7 +32,6 @@ c.gdax.passphrase = 'YOUR-PASSPHRASE'
 c.binance = {}
 c.binance.key = 'E3wiele6YtIGoVBsx36ylIJVx8h53OzEo8Hb3HciXtPgwYofagcpGMBFZ2taSVpB'
 c.binance.secret = 'SOvKGGFZO3PS1aecSqx1Q1aQzC2cGtV55CJaybqoak7yAnPOYWh2Yswgiq9SvmD4'
-
 // Optional stop-order triggers:
 
 // sell if price drops below this % of bought price (0 to disable)

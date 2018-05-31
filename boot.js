@@ -65,7 +65,7 @@ module.exports = function (cb) {
       return
     }
     var db = client.db(zenbot.conf.mongo.db)
-    _.set(zenbot, 'conf.db.mongo', db)
+      _.set(zenbot, 'conf.db.mongo', db)
     cb(null, zenbot)
   })
 }
