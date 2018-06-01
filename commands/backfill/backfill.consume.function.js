@@ -19,8 +19,7 @@ module.exports = function (conf) {
       if (returnedTrades.length > 0) {
         queue.enqueue(returnedTrades.sort((a, b) => {
           return b.trade_id - a.trade_id
-        })
-        )
+        }))
         cb(null, 'cp_process', returnedTrades[returnedTrades.length - 1].trade_id)
       }
       else {
