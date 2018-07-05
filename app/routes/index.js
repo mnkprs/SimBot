@@ -5,17 +5,24 @@ var path = require('path')
 var fs = require('fs')
 var boot = require('../boot')
 var sim = require('../commands/sim')
+var products = require('../extensions/exchanges/binance/products')
+var test = require('../public/javascripts/test')
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.render('index', {title: 'Express'})
-
+    res.render('index', {title: 'Express', products : products })
+    
 });
 
 router.post('/', function (req, res, next) {
-    boot(function (err, zenbot) {
+    var values = []
+    Object.keys(req.body).forEach(function (k) {
+            values = req.body[k]
+    })
+    console.log("VALUES", req.body)
+    // boot(function (err, zenbot) {
         return new Promise(resolve => {
-            sim(zenbot.conf).then((a) => {
+            sim(values,zenbot.conf).then((a) => {
                 resolve(a)
             }).catch((err) => {
                 console.error(err)

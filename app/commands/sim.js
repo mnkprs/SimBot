@@ -11,8 +11,8 @@ var tb = require('timebucket')
     , _ = require('lodash')
 
 
-module.exports = function ( conf) {
-
+module.exports = function (selector,conf) {
+    var selector = selector
     return new Promise(resolve => {
         var cmd = { strategy: 'bollinger',
             sell_stop_pct: 0,
@@ -33,7 +33,7 @@ module.exports = function ( conf) {
             currency_capital: 1,
             asset_capital: 0,
             rsi_periods: 14 }
-        var selector = 'binance.ETH-BTC'
+            console.log("sel",selector)
         var handler
         var s = {options: minimist(process.argv)}
         var so = s.options
