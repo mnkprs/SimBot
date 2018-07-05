@@ -11,7 +11,7 @@ var test = require('../public/javascripts/test')
 /* GET home page. */
 router.get('/', function (req, res, next) {
     res.render('index', {title: 'Express', products : products })
-    
+
 });
 
 router.post('/', function (req, res, next) {
@@ -20,7 +20,7 @@ router.post('/', function (req, res, next) {
             values = req.body[k]
     })
     console.log("VALUES", req.body)
-    // boot(function (err, zenbot) {
+    boot(function (err, zenbot) {
         return new Promise(resolve => {
             sim(values,zenbot.conf).then((a) => {
                 resolve(a)
