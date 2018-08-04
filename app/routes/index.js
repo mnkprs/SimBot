@@ -6,7 +6,7 @@ var fs = require('fs')
 var boot = require('../boot')
 var sim = require('../commands/sim')
 var products = require('../extensions/exchanges/binance/products')
-var test = require('../public/javascripts/test')
+// var test = require('../public/javascripts/test')
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
