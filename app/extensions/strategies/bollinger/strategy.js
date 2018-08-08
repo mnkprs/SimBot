@@ -64,8 +64,8 @@ module.exports = {
   phenotypes: {
     // -- common
     period_length: Phenotypes.RangePeriod(1, 120, 'm'),
-    markdown_buy_pct: Phenotypes.RangeFloat(-1, 5),
-    markup_sell_pct: Phenotypes.RangeFloat(-1, 5),
+    markdown_buy_pct: Phenotypes.RangeFloat(-1, 5), //0
+    markup_sell_pct: Phenotypes.RangeFloat(-1, 5), //0
     order_type: Phenotypes.ListOption(['maker', 'taker']),
     sell_stop_pct: Phenotypes.Range0(1, 50),
     buy_stop_pct: Phenotypes.Range0(1, 50),

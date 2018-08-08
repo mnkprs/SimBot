@@ -3,14 +3,12 @@ var tb = require('timebucket')
   , objectifySelector = require('../lib/objectify-selector')
   , collectionService = require('../lib/services/collection-service')
 
-module.exports = function (program, conf) {
-  program
-    .command('backfill [selector]')
-    .description('download historical trades for analysis')
-    .option('--conf <path>', 'path to optional conf overrides file')
-    .option('-d, --days <days>', 'number of days to acquire (default: ' + conf.days + ')', Number, conf.days)
-    .action(function (selector, cmd) {
-      selector = objectifySelector(selector || conf.selector)
+module.exports = function (selector, conf) {
+
+    return new Promise(resolve => {
+        var cmd = { days : 14 }
+        var handler
+        selector = objectifySelector(selector || conf.selector)
       var exchange = require(`../extensions/exchanges/${selector.exchange_id}/exchange`)(conf)
       if (!exchange) {
         console.error('cannot backfill ' + selector.normalized + ': exchange not implemented')
@@ -39,14 +37,15 @@ module.exports = function (program, conf) {
       var last_batch_id, last_batch_opts
       var offset = exchange.offset
       var markers, trades
+      console.log(mode)
       if (!mode) {
         console.error('cannot backfill ' + selector.normalized + ': exchange does not offer historical data')
         process.exit(0)
       }
+
       if (mode === 'backward') {
         target_time = new Date().getTime() - (86400000 * cmd.days)
-      }
-      else {
+      } else {
         target_time = new Date().getTime()
         start_time = new Date().getTime() - (86400000 * cmd.days)
       }
@@ -171,7 +170,7 @@ module.exports = function (program, conf) {
           if (err) {
             console.error(err)
             console.error('retrying...')
-            return setTimeout(runTasks, 10000, trades)
+            return setTimeout(runTasks, 40000, trades)
           }
         })
       }
@@ -190,7 +189,10 @@ module.exports = function (program, conf) {
         }
         if (mode === 'backward' && marker.oldest_time <= target_time) {
           console.log('\ndownload complete!\n')
-          process.exit(0)
+            handler = 'completed'
+            resolve(handler)
+          // process.exit(0)
+
         }
         if (exchange.backfillRateLimit) {
           setTimeout(getNext, exchange.backfillRateLimit)

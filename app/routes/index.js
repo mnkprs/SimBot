@@ -5,24 +5,21 @@ var path = require('path')
 var fs = require('fs')
 var boot = require('../boot')
 var sim = require('../commands/sim')
+var backfill = require('../commands/backfill')
 var products = require('../extensions/exchanges/binance/products')
-var test = require('../public/javascripts/test')
+var strategyData = require('../public/javascripts/strategyData')
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.render('index', {title: 'Express', products : products })
-
+    res.render('index', {title: 'Express', products : products, strategyData : strategyData })
+    next()
 });
 
-router.post('/', function (req, res, next) {
-    var values = []
-    Object.keys(req.body).forEach(function (k) {
-            values = req.body[k]
-    })
-    console.log("VALUES", req.body)
+router.post('/', function (req, res) {
+    console.log('index post')
     boot(function (err, zenbot) {
         return new Promise(resolve => {
-            sim(values,zenbot.conf).then((a) => {
+            sim(req.body,zenbot.conf).then((a) => {
                 resolve(a)
             }).catch((err) => {
                 console.error(err)
@@ -30,7 +27,7 @@ router.post('/', function (req, res, next) {
         })
     }).then((a)=> {
         console.log(a)
-        res.redirect('/'+ a)
+        res.redirect(a)
     }).catch((err) => {
         console.error(err)
     })
@@ -40,8 +37,24 @@ router.get('/test', function (req, res, next) {
     res.render('test', {files: files});
 });
 
-router.get('/:uniqueHtmlFileName', function (req, res) {
-    res.sendFile('/home/osboxes/code/thesis/ThesisApp/app/simulations/' + req.params.uniqueHtmlFileName + '.html');
+router.get('/no-selector', function (req, res, next) {
+    res.render('no-selector' );
+});
+
+// router.get('/backfill', function (req, res, next) {
+//     res.render('backfill', {products : products});
+// });
+//
+// router.post('/backfill', function (req, res) {
+//     console.log("asdsa")
+//     // boot(function (err, zenbot) {
+//     //         backfill(req.body, zenbot.conf)
+//     // })
+// });
+
+router.get('/sim_*', function (req, res) {
+    res.sendFile('/home/osboxes/code/thesis/ThesisApp/app/simulations/' + 'sim_' + req.params[0] + '.html');
 });
 
 module.exports = router;
+

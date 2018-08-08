@@ -1,8 +1,124 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
-<a onclick="" >test</a>
+<head>
+    {{> imports}}
+    {{> header}}
+</head>
 
-<form method="post" action="/">
-    <input type="test" name="data">
-    <input type="submit">
-</form>
+<body>
+<h1>Welcome</h1>
+
+<div class="col-xs-12">
+    <form method="post" action="/">
+        <div class="form-group col-xs-4">
+            <label for="selector">Selector</label>
+            <select class="form-control" id="selector" name="selector">
+                {{#each products}}
+                    <option value="binance.{{label}}">{{label}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="form-group col-xs-4">
+            <label for="strategy">Strategy</label>
+            <select class="form-control strategy" id="strategy" name="strategy">
+                {{#each strategyData}}
+                    <option value="{{name}}">{{name}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="form-group period-length">
+            <label for="period-length">Period</label>
+            <input type="text" class="form-control" id="period-length" aria-describedby="period-length-help" value="60m">
+            <small id="period-length-help" class="form-text text-muted">Period length. min:1 max:120</small>
+        </div>
+
+        <div class="bollinger-options">
+            <div class="form-group bollinger-size">
+                <label for="bollinger-size">Bollinger Size</label>
+                <input type="text" class="form-control" id="bollinger-size" aria-describedby="bollinger-size-help" value="20">
+                <small id="bollinger-size-help" class="form-text text-muted">Period size. min:1 max:40</small>
+            </div>
+            <div class="form-group bollinger-time">
+                <label for="bollinger-time">Bollinger Time</label>
+                <input type="text" class="form-control" id="bollinger-time" aria-describedby="bollinger-time-help" value="2">
+                <small id="bollinger-time-help" class="form-text text-muted">Times of standard deviation between the upper band and the moving averages. Type of float. min:1 max:6</small>
+            </div>
+            <div class="form-group bollinger-upper-bound-pct">
+                <label for="bollinger-upper-bound-pct">Bollinger Upper Bound Percentage</label>
+                <input type="text" class="form-control" id="bollinger-upper-bound-pct" aria-describedby="bollinger-upper-bound-pct-help" value="0">
+                <small id="bollinger-upper-bound-pct-help" class="form-text text-muted"> Percentage of the current price should be near the bollinger upper bound before we sell. min:-1 max:30</small>
+            </div>
+            <div class="form-group bollinger-lower-bound-pct">
+            <label for="bollinger-lower-bound-pct">Bollinger Lower Bound Percentage</label>
+            <input type="text" class="form-control" id="bollinger-lower-bound-pct" aria-describedby="bollinger-lower-bound-pct-help" value="0">
+            <small id="bollinger-lower-bound-pct-help" class="form-text text-muted"> Percentage of the current price should be near the bollinger lower bound before we buy. min:-1 max:30</small>
+        </div>
+        </div>
+
+        <div class="neural-options">
+            <div class="form-group neurons-1">
+                <label for="neurons-1">Neurons 1</label>
+                <input type="text" class="form-control" id="neurons-1" aria-describedby="neurons-1-help" value="5">
+                <small id="neurons-1-help" class="form-text text-muted"> Neurons in layer 1. min:1 max:20</small>
+            </div>
+            <div class="form-group neurons-2">
+                <label for="neurons-2">Neurons 2</label>
+                <input type="text" class="form-control" id="neurons-2" aria-describedby="neurons-2-help" value="5">
+                <small id="neurons-2-help" class="form-text text-muted"> Neurons in layer 2. min:1 max:20</small>
+            </div>
+            <div class="form-group activation_1_type">
+                <label for="activation_1_type">Activation 1 Type </label>
+                <select class="form-control activation_1_type" id="activation_1_type" name="activation_1_type">
+                        <option value="sigmoid">sigmoid</option>
+                        <option value="tanh">tanh</option>
+                        <option value="relu">relu</option>
+                </select>
+                <small id="activation_1_type-help" class="form-text text-muted">Activation type for neurons in layer 1.</small>
+            </div>
+            <div class="form-group activation_2_type">
+                <label for="activation_2_type">Activation 2 Type </label>
+                <select class="form-control activation_2_type" id="activation_2_type" name="activation_2_type">
+                        <option value="sigmoid">sigmoid</option>
+                        <option value="tanh">tanh</option>
+                        <option value="relu">relu</option>
+                </select>
+                <small id="activation_2_type-help" class="form-text text-muted">Activation type for neurons in layer 2.</small>
+            </div>
+            <div class="form-group min-periods">
+                <label for="min-periods">Minimum Periods</label>
+                <input type="text" class="form-control" id="min-periods" aria-describedby="min-periods-help" value="50">
+                <small id="min-periods-help" class="form-text text-muted">Periods to train neural network with from. min:1 max:200</small>
+            </div>
+            <div class="form-group min-predict">
+                <label for="min-predict">Minimum Prediction</label>
+                <input type="text" class="form-control" id="min-predict" aria-describedby="min-predict-help" value="200">
+                <small id="min-predict-help" class="form-text text-muted">Periods to predict next number from less than minimum periods. min:1 max:200</small>
+            </div>
+            <div class="form-group depth">
+                <label for="depth">Depth</label>
+                <input type="text" class="form-control" id="depth" aria-describedby="depth-help" value="50">
+                <small id="depth-help" class="form-text text-muted">Generally the same as minimum prediction, just for accuracy. min:1 max:200</small>
+            </div>
+            <div class="form-group momentum">
+                <label for="momentum">Momentum</label>
+                <input type="text" class="form-control" id="momentum" aria-describedby="momentum-help" value="0">
+                <small id="momentum-help" class="form-text text-muted">Momentum of prediction between 0 and 1 - 0 is stock. Type of float. min:0 max:1</small>
+            </div>
+            <div class="form-group decay">
+                <label for="decay">Decay</label>
+                <input type="text" class="form-control" id="decay" aria-describedby="decay-help" value="0.001">
+                <small id="decay-help" class="form-text text-muted">Decay of prediction. Use tiny values between 0 and 1. Type of float. min:0 max:1</small>
+            </div>
+            <div class="form-group learns">
+                <label for="learns">Learns</label>
+                <input type="text" class="form-control" id="learns" aria-describedby="learns-help" value="10">
+                <small id="learns-help" class="form-text text-muted">Number of times to 'learn' the neural network with past data. min:1 max:500</small>
+            </div>
+            <div class="form-group learningrate">
+                <label for="learningrate">Learning Rate</label>
+                <input type="text" class="form-control" id="learningrate" aria-describedby="learningrate-help" value="0.01">
+                <small id="learningrate-help" class="form-text text-muted"> The learning rate of the neural network between 0 and 1 - 0.01 is stock. Type of float. min:0 max:1</small>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</body>

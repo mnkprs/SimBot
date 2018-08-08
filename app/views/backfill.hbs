@@ -1,0 +1,25 @@
+<head>
+    {{> imports}}
+    {{> header}}
+</head>
+
+<body>
+<h1>Backfill</h1>
+<h3>Download historical trades for analysis</h3>
+
+<div class="col-xs-12">
+    <form method="post" action="/backfill">
+        <div class="form-group col-xs-4">
+            <label for="selector">Selector</label>
+            <select class="form-control" id="selector" name="selector">
+                {{#each products}}
+                    <option value="binance.{{label}}">{{label}}</option>
+                {{/each}}
+            </select>
+            <small id="selectorHelp" class="form-text text-muted">Select to backfill historical trades for this selector to database.</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Backfill</button>
+    </form>
+</div>
+
+</body>

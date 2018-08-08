@@ -11,10 +11,9 @@ var tb = require('timebucket')
     , _ = require('lodash')
 
 
-module.exports = function (selector,conf) {
-    var selector = selector
+module.exports = function (opts, conf) {
     return new Promise(resolve => {
-        var cmd = { strategy: 'bollinger',
+        var cmd = { strategy: opts.strategy,
             sell_stop_pct: 0,
             buy_stop_pct: 0,
             profit_stop_enable_pct: 0,
@@ -33,7 +32,8 @@ module.exports = function (selector,conf) {
             currency_capital: 1,
             asset_capital: 0,
             rsi_periods: 14 }
-            console.log("sel",selector)
+
+        var selector = opts.selector
         var handler
         var s = {options: minimist(process.argv)}
         var so = s.options
@@ -145,7 +145,9 @@ module.exports = function (selector,conf) {
             console.log()
             if (!s.period) {
                 console.error('no trades found! try running `zenbot backfill ' + so.selector.normalized + '` first')
-                process.exit(1)
+                resolve('no-selector')
+                // process.exit(1)
+                return;
             }
             var option_keys = Object.keys(so)
             var output_lines = []
@@ -247,7 +249,6 @@ module.exports = function (selector,conf) {
                 var out_target = so.filename || 'simulations/sim_result_' + so.selector.normalized + '_' + new Date().toISOString().replace(/T/, '_').replace(/\..+/, '').replace(/-/g, '').replace(/:/g, '').replace(/20/, '') + '_UTC.html'
                 fs.writeFileSync(out_target, out)
                 console.log('wrote', out_target)
-
                 handler = out_target.replace('simulations/', '').replace('.html', '').toString()
             }
 

@@ -29,7 +29,7 @@ new ccxt.binance().fetch_markets().then(function(markets) {
       max_size: market.info.filters[0].maxPrice,
       increment: currStepSize,
       asset_increment: assetStepSize,
-      label: market.base + '/' + market.quote
+      label: market.base + '-' + market.quote
     })
   })
 

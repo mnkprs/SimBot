@@ -7,7 +7,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.001",
-    "label": "ETH/BTC"
+    "label": "ETH-BTC"
   },
   {
     "id": "LTCBTC",
@@ -17,7 +17,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "LTC/BTC"
+    "label": "LTC-BTC"
   },
   {
     "id": "BNBBTC",
@@ -27,7 +27,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "BNB/BTC"
+    "label": "BNB-BTC"
   },
   {
     "id": "NEOBTC",
@@ -37,7 +37,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "NEO/BTC"
+    "label": "NEO-BTC"
   },
   {
     "id": "QTUMETH",
@@ -47,7 +47,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "QTUM/ETH"
+    "label": "QTUM-ETH"
   },
   {
     "id": "EOSETH",
@@ -57,7 +57,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "EOS/ETH"
+    "label": "EOS-ETH"
   },
   {
     "id": "SNTETH",
@@ -67,7 +67,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "SNT/ETH"
+    "label": "SNT-ETH"
   },
   {
     "id": "BNTETH",
@@ -77,7 +77,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "BNT/ETH"
+    "label": "BNT-ETH"
   },
   {
     "id": "BCCBTC",
@@ -87,7 +87,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.001",
-    "label": "BCH/BTC"
+    "label": "BCH-BTC"
   },
   {
     "id": "GASBTC",
@@ -97,7 +97,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "GAS/BTC"
+    "label": "GAS-BTC"
   },
   {
     "id": "BNBETH",
@@ -107,7 +107,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "BNB/ETH"
+    "label": "BNB-ETH"
   },
   {
     "id": "BTCUSDT",
@@ -117,7 +117,7 @@
     "max_size": "10000000.00000000",
     "increment": "0.01",
     "asset_increment": "0.000001",
-    "label": "BTC/USDT"
+    "label": "BTC-USDT"
   },
   {
     "id": "ETHUSDT",
@@ -127,7 +127,7 @@
     "max_size": "10000000.00000000",
     "increment": "0.01",
     "asset_increment": "0.00001",
-    "label": "ETH/USDT"
+    "label": "ETH-USDT"
   },
   {
     "id": "HSRBTC",
@@ -137,7 +137,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "HSR/BTC"
+    "label": "HSR-BTC"
   },
   {
     "id": "OAXETH",
@@ -147,7 +147,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "1.",
-    "label": "OAX/ETH"
+    "label": "OAX-ETH"
   },
   {
     "id": "DNTETH",
@@ -157,7 +157,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "DNT/ETH"
+    "label": "DNT-ETH"
   },
   {
     "id": "MCOETH",
@@ -167,7 +167,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "MCO/ETH"
+    "label": "MCO-ETH"
   },
   {
     "id": "ICNETH",
@@ -177,7 +177,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "1.",
-    "label": "ICN/ETH"
+    "label": "ICN-ETH"
   },
   {
     "id": "MCOBTC",
@@ -187,7 +187,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "MCO/BTC"
+    "label": "MCO-BTC"
   },
   {
     "id": "WTCBTC",
@@ -197,7 +197,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "WTC/BTC"
+    "label": "WTC-BTC"
   },
   {
     "id": "WTCETH",
@@ -207,7 +207,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "WTC/ETH"
+    "label": "WTC-ETH"
   },
   {
     "id": "LRCBTC",
@@ -217,7 +217,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "LRC/BTC"
+    "label": "LRC-BTC"
   },
   {
     "id": "LRCETH",
@@ -227,7 +227,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "LRC/ETH"
+    "label": "LRC-ETH"
   },
   {
     "id": "QTUMBTC",
@@ -237,7 +237,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "QTUM/BTC"
+    "label": "QTUM-BTC"
   },
   {
     "id": "YOYOBTC",
@@ -247,7 +247,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "YOYOW/BTC"
+    "label": "YOYOW-BTC"
   },
   {
     "id": "OMGBTC",
@@ -257,7 +257,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "OMG/BTC"
+    "label": "OMG-BTC"
   },
   {
     "id": "OMGETH",
@@ -267,7 +267,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "OMG/ETH"
+    "label": "OMG-ETH"
   },
   {
     "id": "ZRXBTC",
@@ -277,7 +277,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "ZRX/BTC"
+    "label": "ZRX-BTC"
   },
   {
     "id": "ZRXETH",
@@ -287,7 +287,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "ZRX/ETH"
+    "label": "ZRX-ETH"
   },
   {
     "id": "STRATBTC",
@@ -297,7 +297,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "STRAT/BTC"
+    "label": "STRAT-BTC"
   },
   {
     "id": "STRATETH",
@@ -307,7 +307,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "STRAT/ETH"
+    "label": "STRAT-ETH"
   },
   {
     "id": "SNGLSBTC",
@@ -317,7 +317,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "SNGLS/BTC"
+    "label": "SNGLS-BTC"
   },
   {
     "id": "SNGLSETH",
@@ -327,7 +327,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "SNGLS/ETH"
+    "label": "SNGLS-ETH"
   },
   {
     "id": "BQXBTC",
@@ -337,7 +337,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "BQX/BTC"
+    "label": "BQX-BTC"
   },
   {
     "id": "BQXETH",
@@ -347,7 +347,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "1.",
-    "label": "BQX/ETH"
+    "label": "BQX-ETH"
   },
   {
     "id": "KNCBTC",
@@ -357,7 +357,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "KNC/BTC"
+    "label": "KNC-BTC"
   },
   {
     "id": "KNCETH",
@@ -367,7 +367,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "1.",
-    "label": "KNC/ETH"
+    "label": "KNC-ETH"
   },
   {
     "id": "FUNBTC",
@@ -377,7 +377,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "FUN/BTC"
+    "label": "FUN-BTC"
   },
   {
     "id": "FUNETH",
@@ -387,7 +387,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "FUN/ETH"
+    "label": "FUN-ETH"
   },
   {
     "id": "SNMBTC",
@@ -397,7 +397,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "SNM/BTC"
+    "label": "SNM-BTC"
   },
   {
     "id": "SNMETH",
@@ -407,7 +407,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "SNM/ETH"
+    "label": "SNM-ETH"
   },
   {
     "id": "NEOETH",
@@ -417,7 +417,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "NEO/ETH"
+    "label": "NEO-ETH"
   },
   {
     "id": "IOTABTC",
@@ -427,7 +427,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "IOTA/BTC"
+    "label": "IOTA-BTC"
   },
   {
     "id": "IOTAETH",
@@ -437,7 +437,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "IOTA/ETH"
+    "label": "IOTA-ETH"
   },
   {
     "id": "LINKBTC",
@@ -447,7 +447,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "LINK/BTC"
+    "label": "LINK-BTC"
   },
   {
     "id": "LINKETH",
@@ -457,7 +457,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "LINK/ETH"
+    "label": "LINK-ETH"
   },
   {
     "id": "XVGBTC",
@@ -467,7 +467,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "XVG/BTC"
+    "label": "XVG-BTC"
   },
   {
     "id": "XVGETH",
@@ -477,7 +477,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "XVG/ETH"
+    "label": "XVG-ETH"
   },
   {
     "id": "SALTBTC",
@@ -487,7 +487,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "SALT/BTC"
+    "label": "SALT-BTC"
   },
   {
     "id": "SALTETH",
@@ -497,7 +497,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "SALT/ETH"
+    "label": "SALT-ETH"
   },
   {
     "id": "MDABTC",
@@ -507,7 +507,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "MDA/BTC"
+    "label": "MDA-BTC"
   },
   {
     "id": "MDAETH",
@@ -517,7 +517,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "1.",
-    "label": "MDA/ETH"
+    "label": "MDA-ETH"
   },
   {
     "id": "MTLBTC",
@@ -527,7 +527,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "MTL/BTC"
+    "label": "MTL-BTC"
   },
   {
     "id": "MTLETH",
@@ -537,7 +537,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "MTL/ETH"
+    "label": "MTL-ETH"
   },
   {
     "id": "SUBBTC",
@@ -547,7 +547,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "SUB/BTC"
+    "label": "SUB-BTC"
   },
   {
     "id": "SUBETH",
@@ -557,7 +557,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "SUB/ETH"
+    "label": "SUB-ETH"
   },
   {
     "id": "EOSBTC",
@@ -567,7 +567,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "EOS/BTC"
+    "label": "EOS-BTC"
   },
   {
     "id": "SNTBTC",
@@ -577,7 +577,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "SNT/BTC"
+    "label": "SNT-BTC"
   },
   {
     "id": "ETCETH",
@@ -587,7 +587,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "ETC/ETH"
+    "label": "ETC-ETH"
   },
   {
     "id": "ETCBTC",
@@ -597,7 +597,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "ETC/BTC"
+    "label": "ETC-BTC"
   },
   {
     "id": "MTHBTC",
@@ -607,7 +607,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "MTH/BTC"
+    "label": "MTH-BTC"
   },
   {
     "id": "MTHETH",
@@ -617,7 +617,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "MTH/ETH"
+    "label": "MTH-ETH"
   },
   {
     "id": "ENGBTC",
@@ -627,7 +627,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "ENG/BTC"
+    "label": "ENG-BTC"
   },
   {
     "id": "ENGETH",
@@ -637,7 +637,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "1.",
-    "label": "ENG/ETH"
+    "label": "ENG-ETH"
   },
   {
     "id": "DNTBTC",
@@ -647,7 +647,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "DNT/BTC"
+    "label": "DNT-BTC"
   },
   {
     "id": "ZECBTC",
@@ -657,7 +657,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.001",
-    "label": "ZEC/BTC"
+    "label": "ZEC-BTC"
   },
   {
     "id": "ZECETH",
@@ -667,7 +667,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.001",
-    "label": "ZEC/ETH"
+    "label": "ZEC-ETH"
   },
   {
     "id": "BNTBTC",
@@ -677,7 +677,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "BNT/BTC"
+    "label": "BNT-BTC"
   },
   {
     "id": "ASTBTC",
@@ -687,7 +687,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "AST/BTC"
+    "label": "AST-BTC"
   },
   {
     "id": "ASTETH",
@@ -697,7 +697,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "1.",
-    "label": "AST/ETH"
+    "label": "AST-ETH"
   },
   {
     "id": "DASHBTC",
@@ -707,7 +707,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.001",
-    "label": "DASH/BTC"
+    "label": "DASH-BTC"
   },
   {
     "id": "DASHETH",
@@ -717,7 +717,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.001",
-    "label": "DASH/ETH"
+    "label": "DASH-ETH"
   },
   {
     "id": "OAXBTC",
@@ -727,7 +727,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "OAX/BTC"
+    "label": "OAX-BTC"
   },
   {
     "id": "ICNBTC",
@@ -737,7 +737,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "ICN/BTC"
+    "label": "ICN-BTC"
   },
   {
     "id": "BTGBTC",
@@ -747,7 +747,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "BTG/BTC"
+    "label": "BTG-BTC"
   },
   {
     "id": "BTGETH",
@@ -757,7 +757,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "BTG/ETH"
+    "label": "BTG-ETH"
   },
   {
     "id": "EVXBTC",
@@ -767,7 +767,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "EVX/BTC"
+    "label": "EVX-BTC"
   },
   {
     "id": "EVXETH",
@@ -777,7 +777,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "1.",
-    "label": "EVX/ETH"
+    "label": "EVX-ETH"
   },
   {
     "id": "REQBTC",
@@ -787,7 +787,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "REQ/BTC"
+    "label": "REQ-BTC"
   },
   {
     "id": "REQETH",
@@ -797,7 +797,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "REQ/ETH"
+    "label": "REQ-ETH"
   },
   {
     "id": "VIBBTC",
@@ -807,7 +807,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "VIB/BTC"
+    "label": "VIB-BTC"
   },
   {
     "id": "VIBETH",
@@ -817,7 +817,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "VIB/ETH"
+    "label": "VIB-ETH"
   },
   {
     "id": "HSRETH",
@@ -827,7 +827,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "HSR/ETH"
+    "label": "HSR-ETH"
   },
   {
     "id": "TRXBTC",
@@ -837,7 +837,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "TRX/BTC"
+    "label": "TRX-BTC"
   },
   {
     "id": "TRXETH",
@@ -847,7 +847,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "TRX/ETH"
+    "label": "TRX-ETH"
   },
   {
     "id": "POWRBTC",
@@ -857,7 +857,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "POWR/BTC"
+    "label": "POWR-BTC"
   },
   {
     "id": "POWRETH",
@@ -867,7 +867,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "POWR/ETH"
+    "label": "POWR-ETH"
   },
   {
     "id": "ARKBTC",
@@ -877,7 +877,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "ARK/BTC"
+    "label": "ARK-BTC"
   },
   {
     "id": "ARKETH",
@@ -887,7 +887,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "ARK/ETH"
+    "label": "ARK-ETH"
   },
   {
     "id": "YOYOETH",
@@ -897,7 +897,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "YOYOW/ETH"
+    "label": "YOYOW-ETH"
   },
   {
     "id": "XRPBTC",
@@ -907,7 +907,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "XRP/BTC"
+    "label": "XRP-BTC"
   },
   {
     "id": "XRPETH",
@@ -917,7 +917,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "XRP/ETH"
+    "label": "XRP-ETH"
   },
   {
     "id": "MODBTC",
@@ -927,7 +927,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "MOD/BTC"
+    "label": "MOD-BTC"
   },
   {
     "id": "MODETH",
@@ -937,7 +937,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "MOD/ETH"
+    "label": "MOD-ETH"
   },
   {
     "id": "ENJBTC",
@@ -947,7 +947,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "ENJ/BTC"
+    "label": "ENJ-BTC"
   },
   {
     "id": "ENJETH",
@@ -957,7 +957,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "ENJ/ETH"
+    "label": "ENJ-ETH"
   },
   {
     "id": "STORJBTC",
@@ -967,7 +967,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "STORJ/BTC"
+    "label": "STORJ-BTC"
   },
   {
     "id": "STORJETH",
@@ -977,7 +977,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "1.",
-    "label": "STORJ/ETH"
+    "label": "STORJ-ETH"
   },
   {
     "id": "BNBUSDT",
@@ -987,7 +987,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0001",
     "asset_increment": "0.01",
-    "label": "BNB/USDT"
+    "label": "BNB-USDT"
   },
   {
     "id": "VENBNB",
@@ -997,7 +997,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0001",
     "asset_increment": "0.01",
-    "label": "VEN/BNB"
+    "label": "VEN-BNB"
   },
   {
     "id": "YOYOBNB",
@@ -1007,7 +1007,7 @@
     "max_size": "10000.00000000",
     "increment": "0.000001",
     "asset_increment": "1.",
-    "label": "YOYOW/BNB"
+    "label": "YOYOW-BNB"
   },
   {
     "id": "POWRBNB",
@@ -1017,7 +1017,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "POWR/BNB"
+    "label": "POWR-BNB"
   },
   {
     "id": "VENBTC",
@@ -1027,7 +1027,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "VEN/BTC"
+    "label": "VEN-BTC"
   },
   {
     "id": "VENETH",
@@ -1037,7 +1037,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "VEN/ETH"
+    "label": "VEN-ETH"
   },
   {
     "id": "KMDBTC",
@@ -1047,7 +1047,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "KMD/BTC"
+    "label": "KMD-BTC"
   },
   {
     "id": "KMDETH",
@@ -1057,7 +1057,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "KMD/ETH"
+    "label": "KMD-ETH"
   },
   {
     "id": "NULSBNB",
@@ -1067,7 +1067,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "NULS/BNB"
+    "label": "NULS-BNB"
   },
   {
     "id": "RCNBTC",
@@ -1077,7 +1077,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "RCN/BTC"
+    "label": "RCN-BTC"
   },
   {
     "id": "RCNETH",
@@ -1087,7 +1087,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "RCN/ETH"
+    "label": "RCN-ETH"
   },
   {
     "id": "RCNBNB",
@@ -1097,7 +1097,7 @@
     "max_size": "10000.00000000",
     "increment": "0.000001",
     "asset_increment": "1.",
-    "label": "RCN/BNB"
+    "label": "RCN-BNB"
   },
   {
     "id": "NULSBTC",
@@ -1107,7 +1107,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "NULS/BTC"
+    "label": "NULS-BTC"
   },
   {
     "id": "NULSETH",
@@ -1117,7 +1117,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "NULS/ETH"
+    "label": "NULS-ETH"
   },
   {
     "id": "RDNBTC",
@@ -1127,7 +1127,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "RDN/BTC"
+    "label": "RDN-BTC"
   },
   {
     "id": "RDNETH",
@@ -1137,7 +1137,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "1.",
-    "label": "RDN/ETH"
+    "label": "RDN-ETH"
   },
   {
     "id": "RDNBNB",
@@ -1147,7 +1147,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "RDN/BNB"
+    "label": "RDN-BNB"
   },
   {
     "id": "XMRBTC",
@@ -1157,7 +1157,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.001",
-    "label": "XMR/BTC"
+    "label": "XMR-BTC"
   },
   {
     "id": "XMRETH",
@@ -1167,7 +1167,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.001",
-    "label": "XMR/ETH"
+    "label": "XMR-ETH"
   },
   {
     "id": "DLTBNB",
@@ -1177,7 +1177,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "DLT/BNB"
+    "label": "DLT-BNB"
   },
   {
     "id": "WTCBNB",
@@ -1187,7 +1187,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0001",
     "asset_increment": "0.01",
-    "label": "WTC/BNB"
+    "label": "WTC-BNB"
   },
   {
     "id": "DLTBTC",
@@ -1197,7 +1197,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "DLT/BTC"
+    "label": "DLT-BTC"
   },
   {
     "id": "DLTETH",
@@ -1207,7 +1207,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "DLT/ETH"
+    "label": "DLT-ETH"
   },
   {
     "id": "AMBBTC",
@@ -1217,7 +1217,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "AMB/BTC"
+    "label": "AMB-BTC"
   },
   {
     "id": "AMBETH",
@@ -1227,7 +1227,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "AMB/ETH"
+    "label": "AMB-ETH"
   },
   {
     "id": "AMBBNB",
@@ -1237,7 +1237,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "AMB/BNB"
+    "label": "AMB-BNB"
   },
   {
     "id": "BCCETH",
@@ -1247,7 +1247,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.001",
-    "label": "BCH/ETH"
+    "label": "BCH-ETH"
   },
   {
     "id": "BCCUSDT",
@@ -1257,7 +1257,7 @@
     "max_size": "10000000.00000000",
     "increment": "0.01",
     "asset_increment": "0.00001",
-    "label": "BCH/USDT"
+    "label": "BCH-USDT"
   },
   {
     "id": "BCCBNB",
@@ -1267,7 +1267,7 @@
     "max_size": "100000.00000000",
     "increment": "0.01",
     "asset_increment": "0.00001",
-    "label": "BCH/BNB"
+    "label": "BCH-BNB"
   },
   {
     "id": "BATBTC",
@@ -1277,7 +1277,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "BAT/BTC"
+    "label": "BAT-BTC"
   },
   {
     "id": "BATETH",
@@ -1287,7 +1287,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "BAT/ETH"
+    "label": "BAT-ETH"
   },
   {
     "id": "BATBNB",
@@ -1297,7 +1297,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "BAT/BNB"
+    "label": "BAT-BNB"
   },
   {
     "id": "BCPTBTC",
@@ -1307,7 +1307,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "BCPT/BTC"
+    "label": "BCPT-BTC"
   },
   {
     "id": "BCPTETH",
@@ -1317,7 +1317,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "BCPT/ETH"
+    "label": "BCPT-ETH"
   },
   {
     "id": "BCPTBNB",
@@ -1327,7 +1327,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "BCPT/BNB"
+    "label": "BCPT-BNB"
   },
   {
     "id": "ARNBTC",
@@ -1337,7 +1337,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "ARN/BTC"
+    "label": "ARN-BTC"
   },
   {
     "id": "ARNETH",
@@ -1347,7 +1347,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "ARN/ETH"
+    "label": "ARN-ETH"
   },
   {
     "id": "GVTBTC",
@@ -1357,7 +1357,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "GVT/BTC"
+    "label": "GVT-BTC"
   },
   {
     "id": "GVTETH",
@@ -1367,7 +1367,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "GVT/ETH"
+    "label": "GVT-ETH"
   },
   {
     "id": "CDTBTC",
@@ -1377,7 +1377,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "CDT/BTC"
+    "label": "CDT-BTC"
   },
   {
     "id": "CDTETH",
@@ -1387,7 +1387,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "CDT/ETH"
+    "label": "CDT-ETH"
   },
   {
     "id": "GXSBTC",
@@ -1397,7 +1397,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "GXS/BTC"
+    "label": "GXS-BTC"
   },
   {
     "id": "GXSETH",
@@ -1407,7 +1407,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "GXS/ETH"
+    "label": "GXS-ETH"
   },
   {
     "id": "NEOUSDT",
@@ -1417,7 +1417,7 @@
     "max_size": "10000000.00000000",
     "increment": "0.001",
     "asset_increment": "0.001",
-    "label": "NEO/USDT"
+    "label": "NEO-USDT"
   },
   {
     "id": "NEOBNB",
@@ -1427,7 +1427,7 @@
     "max_size": "10000000.00000000",
     "increment": "0.001",
     "asset_increment": "0.001",
-    "label": "NEO/BNB"
+    "label": "NEO-BNB"
   },
   {
     "id": "POEBTC",
@@ -1437,7 +1437,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "POE/BTC"
+    "label": "POE-BTC"
   },
   {
     "id": "POEETH",
@@ -1447,7 +1447,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "POE/ETH"
+    "label": "POE-ETH"
   },
   {
     "id": "QSPBTC",
@@ -1457,7 +1457,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "QSP/BTC"
+    "label": "QSP-BTC"
   },
   {
     "id": "QSPETH",
@@ -1467,7 +1467,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "QSP/ETH"
+    "label": "QSP-ETH"
   },
   {
     "id": "QSPBNB",
@@ -1477,7 +1477,7 @@
     "max_size": "10000.00000000",
     "increment": "0.000001",
     "asset_increment": "1.",
-    "label": "QSP/BNB"
+    "label": "QSP-BNB"
   },
   {
     "id": "BTSBTC",
@@ -1487,7 +1487,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "BTS/BTC"
+    "label": "BTS-BTC"
   },
   {
     "id": "BTSETH",
@@ -1497,7 +1497,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "BTS/ETH"
+    "label": "BTS-ETH"
   },
   {
     "id": "BTSBNB",
@@ -1507,7 +1507,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "BTS/BNB"
+    "label": "BTS-BNB"
   },
   {
     "id": "XZCBTC",
@@ -1517,7 +1517,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "XZC/BTC"
+    "label": "XZC-BTC"
   },
   {
     "id": "XZCETH",
@@ -1527,7 +1527,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "XZC/ETH"
+    "label": "XZC-ETH"
   },
   {
     "id": "XZCBNB",
@@ -1537,7 +1537,7 @@
     "max_size": "10000000.00000000",
     "increment": "0.001",
     "asset_increment": "0.001",
-    "label": "XZC/BNB"
+    "label": "XZC-BNB"
   },
   {
     "id": "LSKBTC",
@@ -1547,7 +1547,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "LSK/BTC"
+    "label": "LSK-BTC"
   },
   {
     "id": "LSKETH",
@@ -1557,7 +1557,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "LSK/ETH"
+    "label": "LSK-ETH"
   },
   {
     "id": "LSKBNB",
@@ -1567,7 +1567,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0001",
     "asset_increment": "0.01",
-    "label": "LSK/BNB"
+    "label": "LSK-BNB"
   },
   {
     "id": "TNTBTC",
@@ -1577,7 +1577,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "TNT/BTC"
+    "label": "TNT-BTC"
   },
   {
     "id": "TNTETH",
@@ -1587,7 +1587,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "TNT/ETH"
+    "label": "TNT-ETH"
   },
   {
     "id": "FUELBTC",
@@ -1597,7 +1597,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "FUEL/BTC"
+    "label": "FUEL-BTC"
   },
   {
     "id": "FUELETH",
@@ -1607,7 +1607,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "FUEL/ETH"
+    "label": "FUEL-ETH"
   },
   {
     "id": "MANABTC",
@@ -1617,7 +1617,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "MANA/BTC"
+    "label": "MANA-BTC"
   },
   {
     "id": "MANAETH",
@@ -1627,7 +1627,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "MANA/ETH"
+    "label": "MANA-ETH"
   },
   {
     "id": "BCDBTC",
@@ -1637,7 +1637,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.001",
-    "label": "BCD/BTC"
+    "label": "BCD-BTC"
   },
   {
     "id": "BCDETH",
@@ -1647,7 +1647,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.001",
-    "label": "BCD/ETH"
+    "label": "BCD-ETH"
   },
   {
     "id": "DGDBTC",
@@ -1657,7 +1657,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.001",
-    "label": "DGD/BTC"
+    "label": "DGD-BTC"
   },
   {
     "id": "DGDETH",
@@ -1667,7 +1667,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.001",
-    "label": "DGD/ETH"
+    "label": "DGD-ETH"
   },
   {
     "id": "IOTABNB",
@@ -1677,7 +1677,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "IOTA/BNB"
+    "label": "IOTA-BNB"
   },
   {
     "id": "ADXBTC",
@@ -1687,7 +1687,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "ADX/BTC"
+    "label": "ADX-BTC"
   },
   {
     "id": "ADXETH",
@@ -1697,7 +1697,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "1.",
-    "label": "ADX/ETH"
+    "label": "ADX-ETH"
   },
   {
     "id": "ADXBNB",
@@ -1707,7 +1707,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "ADX/BNB"
+    "label": "ADX-BNB"
   },
   {
     "id": "ADABTC",
@@ -1717,7 +1717,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "ADA/BTC"
+    "label": "ADA-BTC"
   },
   {
     "id": "ADAETH",
@@ -1727,7 +1727,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "ADA/ETH"
+    "label": "ADA-ETH"
   },
   {
     "id": "PPTBTC",
@@ -1737,7 +1737,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "PPT/BTC"
+    "label": "PPT-BTC"
   },
   {
     "id": "PPTETH",
@@ -1747,7 +1747,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "PPT/ETH"
+    "label": "PPT-ETH"
   },
   {
     "id": "CMTBTC",
@@ -1757,7 +1757,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "CMT/BTC"
+    "label": "CMT-BTC"
   },
   {
     "id": "CMTETH",
@@ -1767,7 +1767,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "CMT/ETH"
+    "label": "CMT-ETH"
   },
   {
     "id": "CMTBNB",
@@ -1777,7 +1777,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "CMT/BNB"
+    "label": "CMT-BNB"
   },
   {
     "id": "XLMBTC",
@@ -1787,7 +1787,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "XLM/BTC"
+    "label": "XLM-BTC"
   },
   {
     "id": "XLMETH",
@@ -1797,7 +1797,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "XLM/ETH"
+    "label": "XLM-ETH"
   },
   {
     "id": "XLMBNB",
@@ -1807,7 +1807,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "XLM/BNB"
+    "label": "XLM-BNB"
   },
   {
     "id": "CNDBTC",
@@ -1817,7 +1817,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "CND/BTC"
+    "label": "CND-BTC"
   },
   {
     "id": "CNDETH",
@@ -1827,7 +1827,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "CND/ETH"
+    "label": "CND-ETH"
   },
   {
     "id": "CNDBNB",
@@ -1837,7 +1837,7 @@
     "max_size": "10000.00000000",
     "increment": "0.000001",
     "asset_increment": "1.",
-    "label": "CND/BNB"
+    "label": "CND-BNB"
   },
   {
     "id": "LENDBTC",
@@ -1847,7 +1847,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "LEND/BTC"
+    "label": "LEND-BTC"
   },
   {
     "id": "LENDETH",
@@ -1857,7 +1857,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "LEND/ETH"
+    "label": "LEND-ETH"
   },
   {
     "id": "WABIBTC",
@@ -1867,7 +1867,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "WABI/BTC"
+    "label": "WABI-BTC"
   },
   {
     "id": "WABIETH",
@@ -1877,7 +1877,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "WABI/ETH"
+    "label": "WABI-ETH"
   },
   {
     "id": "WABIBNB",
@@ -1887,7 +1887,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "WABI/BNB"
+    "label": "WABI-BNB"
   },
   {
     "id": "LTCETH",
@@ -1897,7 +1897,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.001",
-    "label": "LTC/ETH"
+    "label": "LTC-ETH"
   },
   {
     "id": "LTCUSDT",
@@ -1907,7 +1907,7 @@
     "max_size": "10000000.00000000",
     "increment": "0.01",
     "asset_increment": "0.00001",
-    "label": "LTC/USDT"
+    "label": "LTC-USDT"
   },
   {
     "id": "LTCBNB",
@@ -1917,7 +1917,7 @@
     "max_size": "100000.00000000",
     "increment": "0.01",
     "asset_increment": "0.00001",
-    "label": "LTC/BNB"
+    "label": "LTC-BNB"
   },
   {
     "id": "TNBBTC",
@@ -1927,7 +1927,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "TNB/BTC"
+    "label": "TNB-BTC"
   },
   {
     "id": "TNBETH",
@@ -1937,7 +1937,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "TNB/ETH"
+    "label": "TNB-ETH"
   },
   {
     "id": "WAVESBTC",
@@ -1947,7 +1947,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "WAVES/BTC"
+    "label": "WAVES-BTC"
   },
   {
     "id": "WAVESETH",
@@ -1957,7 +1957,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "WAVES/ETH"
+    "label": "WAVES-ETH"
   },
   {
     "id": "WAVESBNB",
@@ -1967,7 +1967,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0001",
     "asset_increment": "0.01",
-    "label": "WAVES/BNB"
+    "label": "WAVES-BNB"
   },
   {
     "id": "GTOBTC",
@@ -1977,7 +1977,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "GTO/BTC"
+    "label": "GTO-BTC"
   },
   {
     "id": "GTOETH",
@@ -1987,7 +1987,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "GTO/ETH"
+    "label": "GTO-ETH"
   },
   {
     "id": "GTOBNB",
@@ -1997,7 +1997,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "GTO/BNB"
+    "label": "GTO-BNB"
   },
   {
     "id": "ICXBTC",
@@ -2007,7 +2007,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "ICX/BTC"
+    "label": "ICX-BTC"
   },
   {
     "id": "ICXETH",
@@ -2017,7 +2017,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "ICX/ETH"
+    "label": "ICX-ETH"
   },
   {
     "id": "ICXBNB",
@@ -2027,7 +2027,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "ICX/BNB"
+    "label": "ICX-BNB"
   },
   {
     "id": "OSTBTC",
@@ -2037,7 +2037,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "OST/BTC"
+    "label": "OST-BTC"
   },
   {
     "id": "OSTETH",
@@ -2047,7 +2047,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "OST/ETH"
+    "label": "OST-ETH"
   },
   {
     "id": "OSTBNB",
@@ -2057,7 +2057,7 @@
     "max_size": "10000.00000000",
     "increment": "0.000001",
     "asset_increment": "1.",
-    "label": "OST/BNB"
+    "label": "OST-BNB"
   },
   {
     "id": "ELFBTC",
@@ -2067,7 +2067,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "ELF/BTC"
+    "label": "ELF-BTC"
   },
   {
     "id": "ELFETH",
@@ -2077,7 +2077,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "ELF/ETH"
+    "label": "ELF-ETH"
   },
   {
     "id": "AIONBTC",
@@ -2087,7 +2087,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "AION/BTC"
+    "label": "AION-BTC"
   },
   {
     "id": "AIONETH",
@@ -2097,7 +2097,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "AION/ETH"
+    "label": "AION-ETH"
   },
   {
     "id": "AIONBNB",
@@ -2107,7 +2107,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "AION/BNB"
+    "label": "AION-BNB"
   },
   {
     "id": "NEBLBTC",
@@ -2117,7 +2117,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "NEBL/BTC"
+    "label": "NEBL-BTC"
   },
   {
     "id": "NEBLETH",
@@ -2127,7 +2127,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "NEBL/ETH"
+    "label": "NEBL-ETH"
   },
   {
     "id": "NEBLBNB",
@@ -2137,7 +2137,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "NEBL/BNB"
+    "label": "NEBL-BNB"
   },
   {
     "id": "BRDBTC",
@@ -2147,7 +2147,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "BRD/BTC"
+    "label": "BRD-BTC"
   },
   {
     "id": "BRDETH",
@@ -2157,7 +2157,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "1.",
-    "label": "BRD/ETH"
+    "label": "BRD-ETH"
   },
   {
     "id": "BRDBNB",
@@ -2167,7 +2167,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "BRD/BNB"
+    "label": "BRD-BNB"
   },
   {
     "id": "MCOBNB",
@@ -2177,7 +2177,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "MCO/BNB"
+    "label": "MCO-BNB"
   },
   {
     "id": "EDOBTC",
@@ -2187,7 +2187,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "EDO/BTC"
+    "label": "EDO-BTC"
   },
   {
     "id": "EDOETH",
@@ -2197,7 +2197,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "EDO/ETH"
+    "label": "EDO-ETH"
   },
   {
     "id": "WINGSBTC",
@@ -2207,7 +2207,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "WINGS/BTC"
+    "label": "WINGS-BTC"
   },
   {
     "id": "WINGSETH",
@@ -2217,7 +2217,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "1.",
-    "label": "WINGS/ETH"
+    "label": "WINGS-ETH"
   },
   {
     "id": "NAVBTC",
@@ -2227,7 +2227,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "NAV/BTC"
+    "label": "NAV-BTC"
   },
   {
     "id": "NAVETH",
@@ -2237,7 +2237,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "NAV/ETH"
+    "label": "NAV-ETH"
   },
   {
     "id": "NAVBNB",
@@ -2247,7 +2247,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "NAV/BNB"
+    "label": "NAV-BNB"
   },
   {
     "id": "LUNBTC",
@@ -2257,7 +2257,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "LUN/BTC"
+    "label": "LUN-BTC"
   },
   {
     "id": "LUNETH",
@@ -2267,7 +2267,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "LUN/ETH"
+    "label": "LUN-ETH"
   },
   {
     "id": "TRIGBTC",
@@ -2277,7 +2277,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "TRIG/BTC"
+    "label": "TRIG-BTC"
   },
   {
     "id": "TRIGETH",
@@ -2287,7 +2287,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "TRIG/ETH"
+    "label": "TRIG-ETH"
   },
   {
     "id": "TRIGBNB",
@@ -2297,7 +2297,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "TRIG/BNB"
+    "label": "TRIG-BNB"
   },
   {
     "id": "APPCBTC",
@@ -2307,7 +2307,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "APPC/BTC"
+    "label": "APPC-BTC"
   },
   {
     "id": "APPCETH",
@@ -2317,7 +2317,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "1.",
-    "label": "APPC/ETH"
+    "label": "APPC-ETH"
   },
   {
     "id": "APPCBNB",
@@ -2327,7 +2327,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "APPC/BNB"
+    "label": "APPC-BNB"
   },
   {
     "id": "VIBEBTC",
@@ -2337,7 +2337,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "VIBE/BTC"
+    "label": "VIBE-BTC"
   },
   {
     "id": "VIBEETH",
@@ -2347,7 +2347,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "1.",
-    "label": "VIBE/ETH"
+    "label": "VIBE-ETH"
   },
   {
     "id": "RLCBTC",
@@ -2357,7 +2357,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "RLC/BTC"
+    "label": "RLC-BTC"
   },
   {
     "id": "RLCETH",
@@ -2367,7 +2367,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "RLC/ETH"
+    "label": "RLC-ETH"
   },
   {
     "id": "RLCBNB",
@@ -2377,7 +2377,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "RLC/BNB"
+    "label": "RLC-BNB"
   },
   {
     "id": "INSBTC",
@@ -2387,7 +2387,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "INS/BTC"
+    "label": "INS-BTC"
   },
   {
     "id": "INSETH",
@@ -2397,7 +2397,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "INS/ETH"
+    "label": "INS-ETH"
   },
   {
     "id": "PIVXBTC",
@@ -2407,7 +2407,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "PIVX/BTC"
+    "label": "PIVX-BTC"
   },
   {
     "id": "PIVXETH",
@@ -2417,7 +2417,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "PIVX/ETH"
+    "label": "PIVX-ETH"
   },
   {
     "id": "PIVXBNB",
@@ -2427,7 +2427,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "PIVX/BNB"
+    "label": "PIVX-BNB"
   },
   {
     "id": "IOSTBTC",
@@ -2437,7 +2437,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "IOST/BTC"
+    "label": "IOST-BTC"
   },
   {
     "id": "IOSTETH",
@@ -2447,7 +2447,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "IOST/ETH"
+    "label": "IOST-ETH"
   },
   {
     "id": "CHATBTC",
@@ -2457,7 +2457,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "CHAT/BTC"
+    "label": "CHAT-BTC"
   },
   {
     "id": "CHATETH",
@@ -2467,7 +2467,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "CHAT/ETH"
+    "label": "CHAT-ETH"
   },
   {
     "id": "STEEMBTC",
@@ -2477,7 +2477,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "STEEM/BTC"
+    "label": "STEEM-BTC"
   },
   {
     "id": "STEEMETH",
@@ -2487,7 +2487,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "STEEM/ETH"
+    "label": "STEEM-ETH"
   },
   {
     "id": "STEEMBNB",
@@ -2497,7 +2497,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "STEEM/BNB"
+    "label": "STEEM-BNB"
   },
   {
     "id": "NANOBTC",
@@ -2507,7 +2507,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "XRB/BTC"
+    "label": "XRB-BTC"
   },
   {
     "id": "NANOETH",
@@ -2517,7 +2517,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "XRB/ETH"
+    "label": "XRB-ETH"
   },
   {
     "id": "NANOBNB",
@@ -2527,7 +2527,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0001",
     "asset_increment": "0.01",
-    "label": "XRB/BNB"
+    "label": "XRB-BNB"
   },
   {
     "id": "VIABTC",
@@ -2537,7 +2537,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "VIA/BTC"
+    "label": "VIA-BTC"
   },
   {
     "id": "VIAETH",
@@ -2547,7 +2547,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "VIA/ETH"
+    "label": "VIA-ETH"
   },
   {
     "id": "VIABNB",
@@ -2557,7 +2557,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "VIA/BNB"
+    "label": "VIA-BNB"
   },
   {
     "id": "BLZBTC",
@@ -2567,7 +2567,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "BLZ/BTC"
+    "label": "BLZ-BTC"
   },
   {
     "id": "BLZETH",
@@ -2577,7 +2577,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "BLZ/ETH"
+    "label": "BLZ-ETH"
   },
   {
     "id": "BLZBNB",
@@ -2587,7 +2587,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "BLZ/BNB"
+    "label": "BLZ-BNB"
   },
   {
     "id": "AEBTC",
@@ -2597,7 +2597,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "AE/BTC"
+    "label": "AE-BTC"
   },
   {
     "id": "AEETH",
@@ -2607,7 +2607,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "AE/ETH"
+    "label": "AE-ETH"
   },
   {
     "id": "AEBNB",
@@ -2617,7 +2617,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "AE/BNB"
+    "label": "AE-BNB"
   },
   {
     "id": "RPXBTC",
@@ -2627,7 +2627,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "RPX/BTC"
+    "label": "RPX-BTC"
   },
   {
     "id": "RPXETH",
@@ -2637,7 +2637,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "RPX/ETH"
+    "label": "RPX-ETH"
   },
   {
     "id": "RPXBNB",
@@ -2647,7 +2647,7 @@
     "max_size": "10000.00000000",
     "increment": "0.000001",
     "asset_increment": "1.",
-    "label": "RPX/BNB"
+    "label": "RPX-BNB"
   },
   {
     "id": "NCASHBTC",
@@ -2657,7 +2657,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "NCASH/BTC"
+    "label": "NCASH-BTC"
   },
   {
     "id": "NCASHETH",
@@ -2667,7 +2667,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "NCASH/ETH"
+    "label": "NCASH-ETH"
   },
   {
     "id": "NCASHBNB",
@@ -2677,7 +2677,7 @@
     "max_size": "10000.00000000",
     "increment": "0.000001",
     "asset_increment": "1.",
-    "label": "NCASH/BNB"
+    "label": "NCASH-BNB"
   },
   {
     "id": "POABTC",
@@ -2687,7 +2687,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "POA/BTC"
+    "label": "POA-BTC"
   },
   {
     "id": "POAETH",
@@ -2697,7 +2697,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "POA/ETH"
+    "label": "POA-ETH"
   },
   {
     "id": "POABNB",
@@ -2707,7 +2707,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "POA/BNB"
+    "label": "POA-BNB"
   },
   {
     "id": "ZILBTC",
@@ -2717,7 +2717,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "ZIL/BTC"
+    "label": "ZIL-BTC"
   },
   {
     "id": "ZILETH",
@@ -2727,7 +2727,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "ZIL/ETH"
+    "label": "ZIL-ETH"
   },
   {
     "id": "ZILBNB",
@@ -2737,7 +2737,7 @@
     "max_size": "10000.00000000",
     "increment": "0.000001",
     "asset_increment": "1.",
-    "label": "ZIL/BNB"
+    "label": "ZIL-BNB"
   },
   {
     "id": "ONTBTC",
@@ -2747,7 +2747,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "ONT/BTC"
+    "label": "ONT-BTC"
   },
   {
     "id": "ONTETH",
@@ -2757,7 +2757,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "ONT/ETH"
+    "label": "ONT-ETH"
   },
   {
     "id": "ONTBNB",
@@ -2767,7 +2767,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "ONT/BNB"
+    "label": "ONT-BNB"
   },
   {
     "id": "STORMBTC",
@@ -2777,7 +2777,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "STORM/BTC"
+    "label": "STORM-BTC"
   },
   {
     "id": "STORMETH",
@@ -2787,7 +2787,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "STORM/ETH"
+    "label": "STORM-ETH"
   },
   {
     "id": "STORMBNB",
@@ -2797,7 +2797,7 @@
     "max_size": "10000.00000000",
     "increment": "0.000001",
     "asset_increment": "1.",
-    "label": "STORM/BNB"
+    "label": "STORM-BNB"
   },
   {
     "id": "QTUMBNB",
@@ -2807,7 +2807,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "QTUM/BNB"
+    "label": "QTUM-BNB"
   },
   {
     "id": "QTUMUSDT",
@@ -2817,7 +2817,7 @@
     "max_size": "10000000.00000000",
     "increment": "0.001",
     "asset_increment": "0.001",
-    "label": "QTUM/USDT"
+    "label": "QTUM-USDT"
   },
   {
     "id": "XEMBTC",
@@ -2827,7 +2827,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "XEM/BTC"
+    "label": "XEM-BTC"
   },
   {
     "id": "XEMETH",
@@ -2837,7 +2837,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "XEM/ETH"
+    "label": "XEM-ETH"
   },
   {
     "id": "XEMBNB",
@@ -2847,7 +2847,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "XEM/BNB"
+    "label": "XEM-BNB"
   },
   {
     "id": "WANBTC",
@@ -2857,7 +2857,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "WAN/BTC"
+    "label": "WAN-BTC"
   },
   {
     "id": "WANETH",
@@ -2867,7 +2867,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "WAN/ETH"
+    "label": "WAN-ETH"
   },
   {
     "id": "WANBNB",
@@ -2877,7 +2877,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "WAN/BNB"
+    "label": "WAN-BNB"
   },
   {
     "id": "WPRBTC",
@@ -2887,7 +2887,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "WPR/BTC"
+    "label": "WPR-BTC"
   },
   {
     "id": "WPRETH",
@@ -2897,7 +2897,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "WPR/ETH"
+    "label": "WPR-ETH"
   },
   {
     "id": "QLCBTC",
@@ -2907,7 +2907,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "QLC/BTC"
+    "label": "QLC-BTC"
   },
   {
     "id": "QLCETH",
@@ -2917,7 +2917,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "QLC/ETH"
+    "label": "QLC-ETH"
   },
   {
     "id": "SYSBTC",
@@ -2927,7 +2927,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "SYS/BTC"
+    "label": "SYS-BTC"
   },
   {
     "id": "SYSETH",
@@ -2937,7 +2937,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "SYS/ETH"
+    "label": "SYS-ETH"
   },
   {
     "id": "SYSBNB",
@@ -2947,7 +2947,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "SYS/BNB"
+    "label": "SYS-BNB"
   },
   {
     "id": "QLCBNB",
@@ -2957,7 +2957,7 @@
     "max_size": "10000.00000000",
     "increment": "0.000001",
     "asset_increment": "1.",
-    "label": "QLC/BNB"
+    "label": "QLC-BNB"
   },
   {
     "id": "GRSBTC",
@@ -2967,7 +2967,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "GRS/BTC"
+    "label": "GRS-BTC"
   },
   {
     "id": "GRSETH",
@@ -2977,7 +2977,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "GRS/ETH"
+    "label": "GRS-ETH"
   },
   {
     "id": "ADAUSDT",
@@ -2987,7 +2987,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.1",
-    "label": "ADA/USDT"
+    "label": "ADA-USDT"
   },
   {
     "id": "ADABNB",
@@ -2997,7 +2997,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "ADA/BNB"
+    "label": "ADA-BNB"
   },
   {
     "id": "CLOAKBTC",
@@ -3007,7 +3007,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "CLOAK/BTC"
+    "label": "CLOAK-BTC"
   },
   {
     "id": "CLOAKETH",
@@ -3017,7 +3017,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "CLOAK/ETH"
+    "label": "CLOAK-ETH"
   },
   {
     "id": "GNTBTC",
@@ -3027,7 +3027,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "GNT/BTC"
+    "label": "GNT-BTC"
   },
   {
     "id": "GNTETH",
@@ -3037,7 +3037,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "GNT/ETH"
+    "label": "GNT-ETH"
   },
   {
     "id": "GNTBNB",
@@ -3047,7 +3047,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "GNT/BNB"
+    "label": "GNT-BNB"
   },
   {
     "id": "LOOMBTC",
@@ -3057,7 +3057,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "LOOM/BTC"
+    "label": "LOOM-BTC"
   },
   {
     "id": "LOOMETH",
@@ -3067,7 +3067,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "LOOM/ETH"
+    "label": "LOOM-ETH"
   },
   {
     "id": "LOOMBNB",
@@ -3077,7 +3077,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "LOOM/BNB"
+    "label": "LOOM-BNB"
   },
   {
     "id": "XRPUSDT",
@@ -3087,7 +3087,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.1",
-    "label": "XRP/USDT"
+    "label": "XRP-USDT"
   },
   {
     "id": "BCNBTC",
@@ -3097,7 +3097,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "BCN/BTC"
+    "label": "BCN-BTC"
   },
   {
     "id": "BCNETH",
@@ -3107,7 +3107,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "BCN/ETH"
+    "label": "BCN-ETH"
   },
   {
     "id": "BCNBNB",
@@ -3117,7 +3117,7 @@
     "max_size": "10000.00000000",
     "increment": "0.000001",
     "asset_increment": "1.",
-    "label": "BCN/BNB"
+    "label": "BCN-BNB"
   },
   {
     "id": "REPBTC",
@@ -3127,7 +3127,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.001",
-    "label": "REP/BTC"
+    "label": "REP-BTC"
   },
   {
     "id": "REPETH",
@@ -3137,7 +3137,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.001",
-    "label": "REP/ETH"
+    "label": "REP-ETH"
   },
   {
     "id": "REPBNB",
@@ -3147,7 +3147,7 @@
     "max_size": "10000000.00000000",
     "increment": "0.001",
     "asset_increment": "0.001",
-    "label": "REP/BNB"
+    "label": "REP-BNB"
   },
   {
     "id": "TUSDBTC",
@@ -3157,7 +3157,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "TUSD/BTC"
+    "label": "TUSD-BTC"
   },
   {
     "id": "TUSDETH",
@@ -3167,7 +3167,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "TUSD/ETH"
+    "label": "TUSD-ETH"
   },
   {
     "id": "TUSDBNB",
@@ -3177,7 +3177,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "TUSD/BNB"
+    "label": "TUSD-BNB"
   },
   {
     "id": "ZENBTC",
@@ -3187,7 +3187,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.001",
-    "label": "ZEN/BTC"
+    "label": "ZEN-BTC"
   },
   {
     "id": "ZENETH",
@@ -3197,7 +3197,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.001",
-    "label": "ZEN/ETH"
+    "label": "ZEN-ETH"
   },
   {
     "id": "ZENBNB",
@@ -3207,7 +3207,7 @@
     "max_size": "10000000.00000000",
     "increment": "0.001",
     "asset_increment": "0.001",
-    "label": "ZEN/BNB"
+    "label": "ZEN-BNB"
   },
   {
     "id": "SKYBTC",
@@ -3217,7 +3217,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.001",
-    "label": "SKY/BTC"
+    "label": "SKY-BTC"
   },
   {
     "id": "SKYETH",
@@ -3227,7 +3227,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.001",
-    "label": "SKY/ETH"
+    "label": "SKY-ETH"
   },
   {
     "id": "SKYBNB",
@@ -3237,7 +3237,7 @@
     "max_size": "10000000.00000000",
     "increment": "0.001",
     "asset_increment": "0.001",
-    "label": "SKY/BNB"
+    "label": "SKY-BNB"
   },
   {
     "id": "EOSUSDT",
@@ -3247,7 +3247,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0001",
     "asset_increment": "0.01",
-    "label": "EOS/USDT"
+    "label": "EOS-USDT"
   },
   {
     "id": "EOSBNB",
@@ -3257,7 +3257,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0001",
     "asset_increment": "0.01",
-    "label": "EOS/BNB"
+    "label": "EOS-BNB"
   },
   {
     "id": "CVCBTC",
@@ -3267,7 +3267,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "CVC/BTC"
+    "label": "CVC-BTC"
   },
   {
     "id": "CVCETH",
@@ -3277,7 +3277,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "CVC/ETH"
+    "label": "CVC-ETH"
   },
   {
     "id": "CVCBNB",
@@ -3287,7 +3287,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "CVC/BNB"
+    "label": "CVC-BNB"
   },
   {
     "id": "THETABTC",
@@ -3297,7 +3297,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "THETA/BTC"
+    "label": "THETA-BTC"
   },
   {
     "id": "THETAETH",
@@ -3307,7 +3307,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "THETA/ETH"
+    "label": "THETA-ETH"
   },
   {
     "id": "THETABNB",
@@ -3317,7 +3317,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "THETA/BNB"
+    "label": "THETA-BNB"
   },
   {
     "id": "XRPBNB",
@@ -3327,7 +3327,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "XRP/BNB"
+    "label": "XRP-BNB"
   },
   {
     "id": "TUSDUSDT",
@@ -3337,7 +3337,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0001",
     "asset_increment": "0.01",
-    "label": "TUSD/USDT"
+    "label": "TUSD-USDT"
   },
   {
     "id": "IOTAUSDT",
@@ -3347,7 +3347,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0001",
     "asset_increment": "0.01",
-    "label": "IOTA/USDT"
+    "label": "IOTA-USDT"
   },
   {
     "id": "XLMUSDT",
@@ -3357,7 +3357,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "XLM/USDT"
+    "label": "XLM-USDT"
   },
   {
     "id": "IOTXBTC",
@@ -3367,7 +3367,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "IOTX/BTC"
+    "label": "IOTX-BTC"
   },
   {
     "id": "IOTXETH",
@@ -3377,7 +3377,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "IOTX/ETH"
+    "label": "IOTX-ETH"
   },
   {
     "id": "QKCBTC",
@@ -3387,7 +3387,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "QKC/BTC"
+    "label": "QKC-BTC"
   },
   {
     "id": "QKCETH",
@@ -3397,7 +3397,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "QKC/ETH"
+    "label": "QKC-ETH"
   },
   {
     "id": "AGIBTC",
@@ -3407,7 +3407,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "AGI/BTC"
+    "label": "AGI-BTC"
   },
   {
     "id": "AGIETH",
@@ -3417,7 +3417,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "AGI/ETH"
+    "label": "AGI-ETH"
   },
   {
     "id": "AGIBNB",
@@ -3427,7 +3427,7 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "AGI/BNB"
+    "label": "AGI-BNB"
   },
   {
     "id": "NXSBTC",
@@ -3437,7 +3437,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "NXS/BTC"
+    "label": "NXS-BTC"
   },
   {
     "id": "NXSETH",
@@ -3447,7 +3447,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "NXS/ETH"
+    "label": "NXS-ETH"
   },
   {
     "id": "NXSBNB",
@@ -3457,7 +3457,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0001",
     "asset_increment": "0.01",
-    "label": "NXS/BNB"
+    "label": "NXS-BNB"
   },
   {
     "id": "ENJBNB",
@@ -3467,7 +3467,7 @@
     "max_size": "10000.00000000",
     "increment": "0.000001",
     "asset_increment": "1.",
-    "label": "ENJ/BNB"
+    "label": "ENJ-BNB"
   },
   {
     "id": "DATABTC",
@@ -3477,7 +3477,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "DATA/BTC"
+    "label": "DATA-BTC"
   },
   {
     "id": "DATAETH",
@@ -3487,7 +3487,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "DATA/ETH"
+    "label": "DATA-ETH"
   },
   {
     "id": "ONTUSDT",
@@ -3497,7 +3497,7 @@
     "max_size": "10000000.00000000",
     "increment": "0.001",
     "asset_increment": "0.001",
-    "label": "ONT/USDT"
+    "label": "ONT-USDT"
   },
   {
     "id": "TRXUSDT",
@@ -3507,7 +3507,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.1",
-    "label": "TRX/USDT"
+    "label": "TRX-USDT"
   },
   {
     "id": "ETCUSDT",
@@ -3517,7 +3517,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0001",
     "asset_increment": "0.01",
-    "label": "ETC/USDT"
+    "label": "ETC-USDT"
   },
   {
     "id": "ETCBNB",
@@ -3527,7 +3527,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0001",
     "asset_increment": "0.01",
-    "label": "ETC/BNB"
+    "label": "ETC-BNB"
   },
   {
     "id": "ICXUSDT",
@@ -3537,7 +3537,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0001",
     "asset_increment": "0.01",
-    "label": "ICX/USDT"
+    "label": "ICX-USDT"
   },
   {
     "id": "SCBTC",
@@ -3547,7 +3547,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "SC/BTC"
+    "label": "SC-BTC"
   },
   {
     "id": "SCETH",
@@ -3557,7 +3557,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "SC/ETH"
+    "label": "SC-ETH"
   },
   {
     "id": "SCBNB",
@@ -3567,7 +3567,7 @@
     "max_size": "10000.00000000",
     "increment": "0.000001",
     "asset_increment": "1.",
-    "label": "SC/BNB"
+    "label": "SC-BNB"
   },
   {
     "id": "NPXSBTC",
@@ -3577,7 +3577,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "NPXS/BTC"
+    "label": "NPXS-BTC"
   },
   {
     "id": "NPXSETH",
@@ -3587,7 +3587,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "NPXS/ETH"
+    "label": "NPXS-ETH"
   },
   {
     "id": "VENUSDT",
@@ -3597,7 +3597,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0001",
     "asset_increment": "0.01",
-    "label": "VEN/USDT"
+    "label": "VEN-USDT"
   },
   {
     "id": "KEYBTC",
@@ -3607,7 +3607,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "KEY/BTC"
+    "label": "KEY-BTC"
   },
   {
     "id": "KEYETH",
@@ -3617,7 +3617,7 @@
     "max_size": "100000.00000000",
     "increment": "0.00000001",
     "asset_increment": "1.",
-    "label": "KEY/ETH"
+    "label": "KEY-ETH"
   },
   {
     "id": "NASBTC",
@@ -3627,7 +3627,7 @@
     "max_size": "100000.00000000",
     "increment": "0.0000001",
     "asset_increment": "0.01",
-    "label": "NAS/BTC"
+    "label": "NAS-BTC"
   },
   {
     "id": "NASETH",
@@ -3637,7 +3637,7 @@
     "max_size": "100000.00000000",
     "increment": "0.000001",
     "asset_increment": "0.01",
-    "label": "NAS/ETH"
+    "label": "NAS-ETH"
   },
   {
     "id": "NASBNB",
@@ -3647,6 +3647,6 @@
     "max_size": "10000.00000000",
     "increment": "0.00001",
     "asset_increment": "0.01",
-    "label": "NAS/BNB"
+    "label": "NAS-BNB"
   }
 ]
