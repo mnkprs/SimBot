@@ -21,9 +21,8 @@ cp conf-binance.js conf.js
 ```
 
 - View and edit `conf.js`.
-- It's possible to use zenbot in "paper trading" mode without making any changes.
-- You must add your exchange API keys to enable real trading however.
-- API keys do NOT need deposit/withdrawl permissions.
+- (optional) You must add your exchange API keys to enable real trading however.
+- API keys do NOT need deposit/withdrawal permissions.
 
 If using Docker, skip to section "Docker" below.
 
@@ -45,7 +44,7 @@ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 git clone https://github.com/mnkprs/SimBot.git
-cd SimBot
+cd SimBot/app
 npm install
 
 ```
@@ -58,6 +57,7 @@ npm install
 - Run sim.
 - Profit??
 ### TODOs
+- [ ] Fix simulation template results view
 - [ ] Handle Backfill request view page
 - [ ] Docker
 - [ ] More strategies
