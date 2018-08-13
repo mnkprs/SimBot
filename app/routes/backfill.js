@@ -13,18 +13,13 @@ router.post('/', function (req, res,next) {
     boot(function (err, zenbot) {
         return new Promise(resolve => {
             backfill(req.body.selector, zenbot.conf).then((a) => {
-                resolve(a)
+                console.log(a)
+                res.redirect('/')
             }).catch((err) => {
                 console.error(err)
             })
-        }).then((a)=> {
-            console.log(a)
-            res.redirect('/')
-        }).catch((err) => {
-            console.error(err)
         })
     });
 });
-
 
 module.exports = router;

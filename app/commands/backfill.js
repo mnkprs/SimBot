@@ -94,7 +94,9 @@ module.exports = function (selector, conf) {
           if (mode !== 'backward' && !trades.length) {
             if (trade_counter) {
               console.log('\ndownload complete!\n')
-              process.exit(0)
+                return resolve('backfill-completed')
+              // process.exit(0)
+
             }
             else {
               if (get_trade_retry_count < 5) {
@@ -189,10 +191,8 @@ module.exports = function (selector, conf) {
         }
         if (mode === 'backward' && marker.oldest_time <= target_time) {
           console.log('\ndownload complete!\n')
-            handler = 'completed'
-            resolve(handler)
+            resolve('completed')
           // process.exit(0)
-
         }
         if (exchange.backfillRateLimit) {
           setTimeout(getNext, exchange.backfillRateLimit)

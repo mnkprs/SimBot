@@ -28,7 +28,7 @@ module.exports = function (opts, conf) {
             markdown_buy_pct: 0,
             markup_sell_pct: 0,
             order_type: 'maker',
-            days: 4,
+            days: 14,
             currency_capital: 1,
             asset_capital: 0,
             rsi_periods: 14 }
