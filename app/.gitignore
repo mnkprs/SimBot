@@ -3,7 +3,6 @@
 *.tar.gz
 *.log.*
 t.js
-node_modules
 npm-debug.log
 db.json
 dump
@@ -23,7 +22,6 @@ paper_result*
 *_test
 backtesting_*
 generation_data_*
-simulations/*
 models/**/*.json
 models/**/*.html
 *.pyc
@@ -34,7 +32,7 @@ logs
 dist/*
 .idea
 *.iml
-simulations/sim_*.json
 gen.*.bat
 gen.*.sh
 
+node_modules
