@@ -8,7 +8,7 @@ var sim = require('../commands/sim')
 var backfill = require('../commands/backfill')
 var products = require('../extensions/exchanges/binance/products')
 var strategyData = require('../public/javascripts/strategyData')
-
+global.appRoot = path.resolve('/home/osboxes/code/thesis/ThesisApp/app/')
 /* GET home page. */
 router.get('/', function (req, res, next) {
     res.render('index', {title: 'Express', products : products, strategyData : strategyData })
@@ -41,7 +41,7 @@ router.get('/backfill-completed', function (req, res, next) {
 });
 
 router.get('/sim_*', function (req, res) {
-    res.sendFile('/home/osboxes/code/thesis/ThesisApp/app/simulations/' + 'sim_' + req.params[0] + '.html');
+    res.sendFile(appRoot + '/simulations/sim_' + req.params[0] + '.html');
 });
 
 module.exports = router;
