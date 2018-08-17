@@ -39,9 +39,8 @@ router.get('/no-selector', function (req, res, next) {
 router.get('/backfill-completed', function (req, res, next) {
     res.render('backfill-completed' );
 });
-
 router.get('/sim_*', function (req, res) {
-    res.sendFile(appRoot + '/simulations/sim_' + req.params[0] + '.html');
+        res.sendFile( process.cwd() + '/simulations/sim_' + req.params[0] + '.html');
 });
 
 module.exports = router;
