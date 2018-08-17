@@ -46,6 +46,7 @@ sudo apt-get install -y nodejs
 git clone https://github.com/mnkprs/SimBot.git
 cd SimBot/app
 npm install
+npm start
 
 ```
 ### GUI Usage
