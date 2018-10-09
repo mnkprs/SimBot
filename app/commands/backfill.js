@@ -6,7 +6,7 @@ var tb = require('timebucket')
 module.exports = function (selector, conf) {
 
     return new Promise(resolve => {
-        var cmd = { days : 14 }
+        var cmd = { days : 7 }
         var handler
         selector = objectifySelector(selector || conf.selector)
       var exchange = require(`../extensions/exchanges/${selector.exchange_id}/exchange`)(conf)

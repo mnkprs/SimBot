@@ -75,15 +75,15 @@ c.use_fee_asset = false
 // Misc options:
 
 // default # days for backfill and sim commands
-c.days = 14
+c.days = 7
 // defaults to a high number of lookback periods
 c.keep_lookback_periods = 50000
 // ms to poll new trades at
 c.poll_trades = 30000
 // amount of currency to start simulations with
-c.currency_capital = 0.00107000
+c.currency_capital = 1000
 // amount of asset to start simulations with
-c.asset_capital = 0
+c.asset_capital = 1
 // for sim, reverse time at the end of the graph, normalizing buy/hold to 0
 c.symmetrical = false
 // number of periods to calculate RSI at
