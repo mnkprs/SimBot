@@ -118,6 +118,34 @@
                 <small id="learningrate-help" class="form-text text-muted"> The learning rate of the neural network between 0 and 1 - 0.01 is stock. Type of float. min:0 max:1</small>
             </div>
         </div>
+
+        <div class="rsi-options">
+            <div class="form-group rsi-period">
+                <label for="rsi-period">rsi-period</label>
+                <input type="text" class="form-control" id="rsi-period" aria-describedby="rsi-period-help" value="14">
+                <small id="rsi-period-help" class="form-text text-muted">Number of RSI periods.</small>
+            </div>
+            <div class="form-group oversold-rsi">
+                <label for="oversold-rsi">Oversold RSI</label>
+                <input type="text" class="form-control" id="oversold-rsi" aria-describedby="oversold-rsi-help" value="30">
+                <small id="oversold-rsi-help" class="form-text text-muted">Buys when RSI reaches or drops below this value.</small>
+            </div>
+            <div class="form-group overbought-rsi">
+                <label for="overbought-rsi">Overbought RSI</label>
+                <input type="text" class="form-control" id="overbought-rsi" aria-describedby="overbought-rsi-help" value="82">
+                <small id="overbought-rsi-help" class="form-text text-muted">Sell when RSI reaches or goes above this value.</small>
+            </div>
+            <div class="form-group rsi-recover">
+                <label for="rsi-recover">RSI Recover</label>
+                <input type="text" class="form-control" id="rsi-recover" aria-describedby="rsi-recover-help" value="3">
+                <small id="rsi-recover-help" class="form-text text-muted">Allow RSI to recover this many points before buying.</small>
+            </div>
+            <div class="form-group rsi-divisor">
+                <label for="rsi-divisor">RSI Divisor</label>
+                <input type="text" class="form-control" id="rsi-divisor" aria-describedby="rsi-divisor-help" value="2">
+                <small id="rsi-divisor-help" class="form-text text-muted">sell when RSI reaches high-water divided by this value.</small>
+            </div>
+        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>

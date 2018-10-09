@@ -5,15 +5,28 @@
 <script>
     $(function() {
         $(".neural-options").hide()
+        $(".rsi-options").hide()
         $(".bollinger-options").show()
 
         $('.strategy').on('change', function() {
             if(this.value === 'neural') {
+
                 $(".bollinger-options").hide()
+                $(".rsi-options").hide()
                 $(".neural-options").show()
-            } else {
+
+            } else if(this.value === 'bollinger') {
+
                 $(".neural-options").hide()
+                $(".rsi-options").hide()
                 $(".bollinger-options").show()
+
+            } else if(this.value === 'rsi') {
+
+                $(".neural-options").hide()
+                $(".bollinger-options").hide()
+                $(".rsi-options").show()
+
             }
         });
     })
