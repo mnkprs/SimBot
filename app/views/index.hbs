@@ -52,7 +52,6 @@
             <small id="bollinger-lower-bound-pct-help" class="form-text text-muted"> Percentage of the current price should be near the bollinger lower bound before we buy. min:-1 max:30</small>
         </div>
         </div>
-
         <div class="neural-options">
             <div class="form-group neurons-1">
                 <label for="neurons-1">Neurons 1</label>
@@ -118,7 +117,6 @@
                 <small id="learningrate-help" class="form-text text-muted"> The learning rate of the neural network between 0 and 1 - 0.01 is stock. Type of float. min:0 max:1</small>
             </div>
         </div>
-
         <div class="rsi-options">
             <div class="form-group rsi-period">
                 <label for="rsi-period">rsi-period</label>
@@ -146,6 +144,49 @@
                 <small id="rsi-divisor-help" class="form-text text-muted">sell when RSI reaches high-water divided by this value.</small>
             </div>
         </div>
+        <div class="macd-options">
+            <div class="form-group min-periods">
+                <label for="min-periods-macd">Minimum Periods</label>
+                <input type="text" class="form-control" id="min-periods-macd" aria-describedby="min-periods-help" value="50">
+                <small id="min-periods-help" class="form-text text-muted">Periods to train neural network with from. min:1 max:200</small>
+            </div>
+            <div class="form-group ema-short-period">
+                <label for="ema-short-period">EMA Short Period</label>
+                <input type="text" class="form-control" id="ema-short-period" aria-describedby="ema-short-period-help" value="12">
+                <small id="ema-short-period-help" class="form-text text-muted">Number of periods for the shorter EMA. </small>
+            </div>
+            <div class="form-group ema-long-period">
+                <label for="ema-long-period">EMA Long Period</label>
+                <input type="text" class="form-control" id="ema-long-period" aria-describedby="ema-long-period-help" value="26">
+                <small id="ema-long-period-help" class="form-text text-muted">Number of periods for the longer EMA. </small>
+            </div>
+            <div class="form-group signal-period">
+                <label for="signal-period">Signal Period</label>
+                <input type="text" class="form-control" id="signal-period" aria-describedby="signal-period-help" value="9">
+                <small id="signal-period-help" class="form-text text-muted">Number of periods for the signal EMA. </small>
+            </div>
+            <div class="form-group up-trend-threshold">
+                <label for="up-trend-threshold">Up-trend Threshold</label>
+                <input type="text" class="form-control" id="up-trend-threshold" aria-describedby="up-trend-threshold-help" value="0">
+                <small id="up-trend-threshold-help" class="form-text text-muted">Threshold to trigger a buy signal. </small>
+            </div>
+            <div class="form-group down-trend-threshold">
+                <label for="down-trend-threshold">Down-trend Threshold</label>
+                <input type="text" class="form-control" id="down-trend-threshold" aria-describedby="down-trend-threshold-help" value="0">
+                <small id="down-trend-threshold-help" class="form-text text-muted">Threshold to trigger a sold signal. </small>
+            </div>
+            <div class="form-group overbought-rsi">
+                <label for="overbought-rsi">Overbought RSI</label>
+                <input type="text" class="form-control" id="overbought-rsi" aria-describedby="overbought-rsi-help" value="70">
+                <small id="overbought-rsi-help" class="form-text text-muted">Sell when RSI reaches or goes above this value.</small>
+            </div>
+            <div class="form-group overbought-rsi-periods">
+                <label for="overbought-rsi-periods">Overbought RSI Periods</label>
+                <input type="text" class="form-control" id="overbought-rsi-periods" aria-describedby="overbought-rsi-periods-help" value="25">
+                <small id="overbought-rsi-periods-help" class="form-text text-muted">Number of periods for overbought RSI.</small>
+            </div>
+        </div>
+
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
