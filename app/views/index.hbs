@@ -26,41 +26,41 @@
         </div>
         <div class="form-group period-length">
             <label for="period-length">Period</label>
-            <input type="text" class="form-control" id="period-length" aria-describedby="period-length-help" value="60m">
+            <input type="text" class="form-control" name="period_length" id="period-length" aria-describedby="period-length-help" value="60m">
             <small id="period-length-help" class="form-text text-muted">Period length. min:1 max:120</small>
         </div>
 
         <div class="bollinger-options">
             <div class="form-group bollinger-size">
                 <label for="bollinger-size">Bollinger Size</label>
-                <input type="text" class="form-control" id="bollinger-size" aria-describedby="bollinger-size-help" value="20">
+                <input type="text" class="form-control" id="bollinger-size" name="bollinger_size" aria-describedby="bollinger-size-help" value="20">
                 <small id="bollinger-size-help" class="form-text text-muted">Period size. min:1 max:40</small>
             </div>
             <div class="form-group bollinger-time">
                 <label for="bollinger-time">Bollinger Time</label>
-                <input type="text" class="form-control" id="bollinger-time" aria-describedby="bollinger-time-help" value="2">
+                <input type="text" class="form-control" id="bollinger-time" name="bollinger_time" aria-describedby="bollinger-time-help" value="2">
                 <small id="bollinger-time-help" class="form-text text-muted">Times of standard deviation between the upper band and the moving averages. Type of float. min:1 max:6</small>
             </div>
             <div class="form-group bollinger-upper-bound-pct">
                 <label for="bollinger-upper-bound-pct">Bollinger Upper Bound Percentage</label>
-                <input type="text" class="form-control" id="bollinger-upper-bound-pct" aria-describedby="bollinger-upper-bound-pct-help" value="0">
+                <input type="text" class="form-control" id="bollinger-upper-bound-pct" name="bollinger_upper_bound_pct" aria-describedby="bollinger-upper-bound-pct-help" value="0">
                 <small id="bollinger-upper-bound-pct-help" class="form-text text-muted"> Percentage of the current price should be near the bollinger upper bound before we sell. min:-1 max:30</small>
             </div>
             <div class="form-group bollinger-lower-bound-pct">
             <label for="bollinger-lower-bound-pct">Bollinger Lower Bound Percentage</label>
-            <input type="text" class="form-control" id="bollinger-lower-bound-pct" aria-describedby="bollinger-lower-bound-pct-help" value="0">
+            <input type="text" class="form-control" id="bollinger-lower-bound-pct" name="bollinger_lower_bound_pct" aria-describedby="bollinger-lower-bound-pct-help" value="0">
             <small id="bollinger-lower-bound-pct-help" class="form-text text-muted"> Percentage of the current price should be near the bollinger lower bound before we buy. min:-1 max:30</small>
         </div>
         </div>
         <div class="neural-options">
             <div class="form-group neurons-1">
                 <label for="neurons-1">Neurons 1</label>
-                <input type="text" class="form-control" id="neurons-1" aria-describedby="neurons-1-help" value="5">
+                <input type="text" class="form-control" id="neurons-1" name="neurons_1" aria-describedby="neurons-1-help" value="5">
                 <small id="neurons-1-help" class="form-text text-muted"> Neurons in layer 1. min:1 max:20</small>
             </div>
             <div class="form-group neurons-2">
                 <label for="neurons-2">Neurons 2</label>
-                <input type="text" class="form-control" id="neurons-2" aria-describedby="neurons-2-help" value="5">
+                <input type="text" class="form-control" id="neurons-2" name="neurons_2" aria-describedby="neurons-2-help" value="5">
                 <small id="neurons-2-help" class="form-text text-muted"> Neurons in layer 2. min:1 max:20</small>
             </div>
             <div class="form-group activation_1_type">
@@ -83,106 +83,111 @@
             </div>
             <div class="form-group min-periods">
                 <label for="min-periods">Minimum Periods</label>
-                <input type="text" class="form-control" id="min-periods" aria-describedby="min-periods-help" value="50">
+                <input type="text" class="form-control" id="min-periods" name="min_periods" aria-describedby="min-periods-help" value="50">
                 <small id="min-periods-help" class="form-text text-muted">Periods to train neural network with from. min:1 max:200</small>
             </div>
             <div class="form-group min-predict">
                 <label for="min-predict">Minimum Prediction</label>
-                <input type="text" class="form-control" id="min-predict" aria-describedby="min-predict-help" value="200">
+                <input type="text" class="form-control" id="min-predict" name="min_predict" aria-describedby="min-predict-help" value="200">
                 <small id="min-predict-help" class="form-text text-muted">Periods to predict next number from less than minimum periods. min:1 max:200</small>
             </div>
             <div class="form-group depth">
                 <label for="depth">Depth</label>
-                <input type="text" class="form-control" id="depth" aria-describedby="depth-help" value="50">
+                <input type="text" class="form-control" id="depth" name="depth" aria-describedby="depth-help" value="50">
                 <small id="depth-help" class="form-text text-muted">Generally the same as minimum prediction, just for accuracy. min:1 max:200</small>
             </div>
             <div class="form-group momentum">
                 <label for="momentum">Momentum</label>
-                <input type="text" class="form-control" id="momentum" aria-describedby="momentum-help" value="0">
+                <input type="text" class="form-control" id="momentum" name="momentum" aria-describedby="momentum-help" value="0">
                 <small id="momentum-help" class="form-text text-muted">Momentum of prediction between 0 and 1 - 0 is stock. Type of float. min:0 max:1</small>
             </div>
             <div class="form-group decay">
                 <label for="decay">Decay</label>
-                <input type="text" class="form-control" id="decay" aria-describedby="decay-help" value="0.001">
+                <input type="text" class="form-control" id="decay" name="decay" aria-describedby="decay-help" value="0.001">
                 <small id="decay-help" class="form-text text-muted">Decay of prediction. Use tiny values between 0 and 1. Type of float. min:0 max:1</small>
             </div>
             <div class="form-group learns">
                 <label for="learns">Learns</label>
-                <input type="text" class="form-control" id="learns" aria-describedby="learns-help" value="10">
+                <input type="text" class="form-control" id="learns" name="learns" aria-describedby="learns-help" value="10">
                 <small id="learns-help" class="form-text text-muted">Number of times to 'learn' the neural network with past data. min:1 max:500</small>
             </div>
             <div class="form-group learningrate">
                 <label for="learningrate">Learning Rate</label>
-                <input type="text" class="form-control" id="learningrate" aria-describedby="learningrate-help" value="0.01">
+                <input type="text" class="form-control" id="learningrate" name="learningrate" aria-describedby="learningrate-help" value="0.01">
                 <small id="learningrate-help" class="form-text text-muted"> The learning rate of the neural network between 0 and 1 - 0.01 is stock. Type of float. min:0 max:1</small>
             </div>
         </div>
         <div class="rsi-options">
+            <div class="form-group min-periods">
+                <label for="min-periods-rsi">Minimum Periods</label>
+                <input type="text" class="form-control" id="min-periods-rsi" name="min_periods" aria-describedby="min-periods-help" value="50">
+                <small id="min-periods-help" class="form-text text-muted">Minimum number of history periods min:1 </small>
+            </div>
             <div class="form-group rsi-period">
-                <label for="rsi-period">rsi-period</label>
-                <input type="text" class="form-control" id="rsi-period" aria-describedby="rsi-period-help" value="14">
+                <label for="rsi-period">RSI Period</label>
+                <input type="text" class="form-control" id="rsi-period" name="rsi_period" aria-describedby="rsi-period-help" value="14">
                 <small id="rsi-period-help" class="form-text text-muted">Number of RSI periods.</small>
             </div>
             <div class="form-group oversold-rsi">
                 <label for="oversold-rsi">Oversold RSI</label>
-                <input type="text" class="form-control" id="oversold-rsi" aria-describedby="oversold-rsi-help" value="30">
+                <input type="text" class="form-control" id="oversold-rsi" name="oversold_rsi" aria-describedby="oversold-rsi-help" value="30">
                 <small id="oversold-rsi-help" class="form-text text-muted">Buys when RSI reaches or drops below this value.</small>
             </div>
             <div class="form-group overbought-rsi">
                 <label for="overbought-rsi">Overbought RSI</label>
-                <input type="text" class="form-control" id="overbought-rsi" aria-describedby="overbought-rsi-help" value="82">
+                <input type="text" class="form-control" id="overbought-rsi" name="overbought_rsi" aria-describedby="overbought-rsi-help" value="82">
                 <small id="overbought-rsi-help" class="form-text text-muted">Sell when RSI reaches or goes above this value.</small>
             </div>
             <div class="form-group rsi-recover">
                 <label for="rsi-recover">RSI Recover</label>
-                <input type="text" class="form-control" id="rsi-recover" aria-describedby="rsi-recover-help" value="3">
+                <input type="text" class="form-control" id="rsi-recover" name="rsi_recover"  aria-describedby="rsi-recover-help" value="3">
                 <small id="rsi-recover-help" class="form-text text-muted">Allow RSI to recover this many points before buying.</small>
             </div>
             <div class="form-group rsi-divisor">
                 <label for="rsi-divisor">RSI Divisor</label>
-                <input type="text" class="form-control" id="rsi-divisor" aria-describedby="rsi-divisor-help" value="2">
+                <input type="text" class="form-control" id="rsi-divisor" name="rsi_divisor" aria-describedby="rsi-divisor-help" value="2">
                 <small id="rsi-divisor-help" class="form-text text-muted">sell when RSI reaches high-water divided by this value.</small>
             </div>
         </div>
         <div class="macd-options">
             <div class="form-group min-periods">
                 <label for="min-periods-macd">Minimum Periods</label>
-                <input type="text" class="form-control" id="min-periods-macd" aria-describedby="min-periods-help" value="50">
+                <input type="text" class="form-control" id="min-periods-macd" name="min_periods_macd" aria-describedby="min-periods-help" value="50">
                 <small id="min-periods-help" class="form-text text-muted">Periods to train neural network with from. min:1 max:200</small>
             </div>
             <div class="form-group ema-short-period">
                 <label for="ema-short-period">EMA Short Period</label>
-                <input type="text" class="form-control" id="ema-short-period" aria-describedby="ema-short-period-help" value="12">
+                <input type="text" class="form-control" id="ema-short-period" name="ema_short_period" aria-describedby="ema-short-period-help" value="12">
                 <small id="ema-short-period-help" class="form-text text-muted">Number of periods for the shorter EMA. </small>
             </div>
             <div class="form-group ema-long-period">
                 <label for="ema-long-period">EMA Long Period</label>
-                <input type="text" class="form-control" id="ema-long-period" aria-describedby="ema-long-period-help" value="26">
+                <input type="text" class="form-control" id="ema-long-period" name="ema_long_period" aria-describedby="ema-long-period-help" value="26">
                 <small id="ema-long-period-help" class="form-text text-muted">Number of periods for the longer EMA. </small>
             </div>
             <div class="form-group signal-period">
                 <label for="signal-period">Signal Period</label>
-                <input type="text" class="form-control" id="signal-period" aria-describedby="signal-period-help" value="9">
+                <input type="text" class="form-control" id="signal-period" name="signal_period" aria-describedby="signal-period-help" value="9">
                 <small id="signal-period-help" class="form-text text-muted">Number of periods for the signal EMA. </small>
             </div>
             <div class="form-group up-trend-threshold">
                 <label for="up-trend-threshold">Up-trend Threshold</label>
-                <input type="text" class="form-control" id="up-trend-threshold" aria-describedby="up-trend-threshold-help" value="0">
+                <input type="text" class="form-control" id="up-trend-threshold" name="up_trend_threshold" aria-describedby="up-trend-threshold-help" value="0">
                 <small id="up-trend-threshold-help" class="form-text text-muted">Threshold to trigger a buy signal. </small>
             </div>
             <div class="form-group down-trend-threshold">
                 <label for="down-trend-threshold">Down-trend Threshold</label>
-                <input type="text" class="form-control" id="down-trend-threshold" aria-describedby="down-trend-threshold-help" value="0">
+                <input type="text" class="form-control" id="down-trend-threshold" name="down_trend_threshold" aria-describedby="down-trend-threshold-help" value="0">
                 <small id="down-trend-threshold-help" class="form-text text-muted">Threshold to trigger a sold signal. </small>
             </div>
             <div class="form-group overbought-rsi">
                 <label for="overbought-rsi">Overbought RSI</label>
-                <input type="text" class="form-control" id="overbought-rsi" aria-describedby="overbought-rsi-help" value="70">
+                <input type="text" class="form-control" id="overbought-rsi" name="overbought_rsi" aria-describedby="overbought-rsi-help" value="70">
                 <small id="overbought-rsi-help" class="form-text text-muted">Sell when RSI reaches or goes above this value.</small>
             </div>
             <div class="form-group overbought-rsi-periods">
                 <label for="overbought-rsi-periods">Overbought RSI Periods</label>
-                <input type="text" class="form-control" id="overbought-rsi-periods" aria-describedby="overbought-rsi-periods-help" value="25">
+                <input type="text" class="form-control" id="overbought-rsi-periods" name="overbought_rsi_periods" aria-describedby="overbought-rsi-periods-help" value="25">
                 <small id="overbought-rsi-periods-help" class="form-text text-muted">Number of periods for overbought RSI.</small>
             </div>
         </div>

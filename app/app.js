@@ -7,7 +7,7 @@ var hbs = require('hbs')
 var indexRouter = require('./routes/index');
 var backfillRouter = require('./routes/backfill');
 var usersRouter = require('./routes/users');
-
+const bodyParser = require('body-parser');
 var app = express();
 
 // view engine setup
@@ -20,6 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/', indexRouter);
 app.use('/backfill', backfillRouter);
