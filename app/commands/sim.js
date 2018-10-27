@@ -13,6 +13,7 @@ var tb = require('timebucket')
 
 module.exports = function (opts, conf) {
     return new Promise(resolve => {
+
         var cmd = { strategy: opts.strategy,
             sell_stop_pct: 0,
             buy_stop_pct: 0,
@@ -28,14 +29,13 @@ module.exports = function (opts, conf) {
             markdown_buy_pct: 0,
             markup_sell_pct: 0,
             order_type: 'maker',
-            days: 7,
+            days: 4,
             currency_capital: 1,
             asset_capital: 0,
             rsi_periods: 14 }
-
         var selector = opts.selector
         var handler
-        var s = {options: minimist(process.argv)}
+        var s = {options: opts}
         var so = s.options
         delete so._
         Object.keys(conf).forEach(function (k) {
@@ -77,7 +77,8 @@ module.exports = function (opts, conf) {
         var cursor, reversing, reverse_point
         var query_start = so.start ? tb(so.start).resize(so.period_length).subtract(so.min_periods + 2).toMilliseconds() : null
 
-        function getNext() {
+        var getNext;
+        (getNext = function (){
             var opts = {
                 query: {
                     selector: so.selector.normalized
@@ -139,8 +140,7 @@ module.exports = function (opts, conf) {
                 }
                 setImmediate(getNext)
             })
-        }
-        getNext()
+        })();
         function exitSim() {
             console.log()
             if (!s.period) {
