@@ -52,13 +52,11 @@ npm start
 ### GUI Usage
 
 - Navivate to ```localhost:3000```
-- Go  to backfill
+- Go to backfill
 - Select a selector to perform a simulation (backfilling 14 days old trade data to mongoDB takes ~2 minutes. Http Request may timeout but backfilling will still go on until its completed. Check cmd for more details while request is pending.)
 - Then go to home page and select the selector you previously backfilled and optionally adjust parameters.
 - Run sim.
 - Profit??
 ### TODOs
 - [ ] Fix simulation template results view
-- [ ] Handle Backfill request view page
-- [ ] Docker
 - [ ] More strategies
