@@ -43,6 +43,7 @@ module.exports = function (opts, conf) {
                 so[k] = cmd[k]
             }
         })
+        console.log(so)
         var tradesCollection = collectionService(conf).getTrades()
         var simResults = collectionService(conf).getSimResults()
         var eventBus = conf.eventBus
@@ -204,6 +205,10 @@ module.exports = function (opts, conf) {
                 output_lines.push('error rate: ' + (sells ? n(losses).divide(sells).format('0.00%') : '0.00%').yellow)
             }
             options_output.simresults.start_capital = s.start_capital
+            options_output.simresults.last_buy_price = s.last_buy_price
+            options_output.simresults.last_assest_value = s.trades[s.trades.length-1].price
+            options_output.net_currency = s.net_currency
+            options_output.simresults.asset_capital = s.asset_capital
             options_output.simresults.currency = n(s.balance.currency).value()
             options_output.simresults.profit = profit.value()
             options_output.simresults.buy_hold = buy_hold.value()
@@ -213,6 +218,7 @@ module.exports = function (opts, conf) {
             options_output.simresults.total_sells = sells
             options_output.simresults.total_losses = losses
             options_output.simresults.vs_buy_hold = n(s.balance.currency).subtract(buy_hold).divide(buy_hold).value() * 100.00
+
             let options_json = JSON.stringify(options_output, null, 2)
             if (so.show_options) {
                 output_lines.push(options_json)

@@ -1,41 +1,197 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
 <script>
-    $(function() {
-        $(".neural-options").hide()
-        $(".rsi-options").hide()
-        $(".macd-options").hide()
+    $(function () {
+
         $(".bollinger-options").show()
 
-        $('.strategy').on('change', function() {
-            if(this.value === 'neural') {
+        $('.strategy').on('change', function () {
+            if (this.value === 'neural') {
 
-                $(".bollinger-options").hide()
-                $(".macd-options").hide()
-                $(".rsi-options").hide()
-                $(".neural-options").show()
+                $(".bollinger-options").empty()
+                $(".macd-options").empty()
+                $(".rsi-options").empty()
+                $(".neural-options").append(" <div class=\"form-group neurons-1\">\n" +
+                        "                <label for=\"neurons-1\">Neurons 1</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"neurons-1\" name=\"neurons_1\" aria-describedby=\"neurons-1-help\" value=\"5\">\n" +
+                        "                <small id=\"neurons-1-help\" class=\"form-text text-muted\"> Neurons in layer 1. min:1 max:20</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group neurons-2\">\n" +
+                        "                <label for=\"neurons-2\">Neurons 2</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"neurons-2\" name=\"neurons_2\" aria-describedby=\"neurons-2-help\" value=\"5\">\n" +
+                        "                <small id=\"neurons-2-help\" class=\"form-text text-muted\"> Neurons in layer 2. min:1 max:20</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group activation_1_type\">\n" +
+                        "                <label for=\"activation_1_type\">Activation 1 Type </label>\n" +
+                        "                <select class=\"form-control activation_1_type\" id=\"activation_1_type\" name=\"activation_1_type\">\n" +
+                        "                        <option value=\"sigmoid\">sigmoid</option>\n" +
+                        "                        <option value=\"tanh\">tanh</option>\n" +
+                        "                        <option value=\"relu\">relu</option>\n" +
+                        "                </select>\n" +
+                        "                <small id=\"activation_1_type-help\" class=\"form-text text-muted\">Activation type for neurons in layer 1.</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group activation_2_type\">\n" +
+                        "                <label for=\"activation_2_type\">Activation 2 Type </label>\n" +
+                        "                <select class=\"form-control activation_2_type\" id=\"activation_2_type\" name=\"activation_2_type\">\n" +
+                        "                        <option value=\"sigmoid\">sigmoid</option>\n" +
+                        "                        <option value=\"tanh\">tanh</option>\n" +
+                        "                        <option value=\"relu\">relu</option>\n" +
+                        "                </select>\n" +
+                        "                <small id=\"activation_2_type-help\" class=\"form-text text-muted\">Activation type for neurons in layer 2.</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group min-periods\">\n" +
+                        "                <label for=\"min-periods\">Minimum Periods</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"min-periods\" name=\"min_periods\" aria-describedby=\"min-periods-help\" value=\"50\">\n" +
+                        "                <small id=\"min-periods-help\" class=\"form-text text-muted\">Periods to train neural network with from. min:1 max:200</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group min-predict\">\n" +
+                        "                <label for=\"min-predict\">Minimum Prediction</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"min-predict\" name=\"min_predict\" aria-describedby=\"min-predict-help\" value=\"200\">\n" +
+                        "                <small id=\"min-predict-help\" class=\"form-text text-muted\">Periods to predict next number from less than minimum periods. min:1 max:200</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group depth\">\n" +
+                        "                <label for=\"depth\">Depth</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"depth\" name=\"depth\" aria-describedby=\"depth-help\" value=\"50\">\n" +
+                        "                <small id=\"depth-help\" class=\"form-text text-muted\">Generally the same as minimum prediction, just for accuracy. min:1 max:200</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group momentum\">\n" +
+                        "                <label for=\"momentum\">Momentum</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"momentum\" name=\"momentum\" aria-describedby=\"momentum-help\" value=\"0\">\n" +
+                        "                <small id=\"momentum-help\" class=\"form-text text-muted\">Momentum of prediction between 0 and 1 - 0 is stock. Type of float. min:0 max:1</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group decay\">\n" +
+                        "                <label for=\"decay\">Decay</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"decay\" name=\"decay\" aria-describedby=\"decay-help\" value=\"0.001\">\n" +
+                        "                <small id=\"decay-help\" class=\"form-text text-muted\">Decay of prediction. Use tiny values between 0 and 1. Type of float. min:0 max:1</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group learns\">\n" +
+                        "                <label for=\"learns\">Learns</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"learns\" name=\"learns\" aria-describedby=\"learns-help\" value=\"10\">\n" +
+                        "                <small id=\"learns-help\" class=\"form-text text-muted\">Number of times to 'learn' the neural network with past data. min:1 max:500</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group learningrate\">\n" +
+                        "                <label for=\"learningrate\">Learning Rate</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"learningrate\" name=\"learningrate\" aria-describedby=\"learningrate-help\" value=\"0.01\">\n" +
+                        "                <small id=\"learningrate-help\" class=\"form-text text-muted\"> The learning rate of the neural network between 0 and 1 - 0.01 is stock. Type of float. min:0 max:1</small>\n" +
+                        "            </div>")
 
-            } else if(this.value === 'bollinger') {
+            } else if (this.value === 'bollinger') {
 
-                $(".neural-options").hide()
-                $(".macd-options").hide()
-                $(".rsi-options").hide()
-                $(".bollinger-options").show()
+                $(".neural-options").empty()
+                $(".macd-options").empty()
+                $(".rsi-options").empty()
+                $(".bollinger-options").append("<div class=\"form-group bollinger-size\">\n" +
+                        "                <label for=\"bollinger-size\">Bollinger Size</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"bollinger-size\" name=\"bollinger_size\" aria-describedby=\"bollinger-size-help\" value=\"20\">\n" +
+                        "                <small id=\"bollinger-size-help\" class=\"form-text text-muted\">Period size. min:1 max:40</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group bollinger-time\">\n" +
+                        "                <label for=\"bollinger-time\">Bollinger Time</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"bollinger-time\" name=\"bollinger_time\" aria-describedby=\"bollinger-time-help\" value=\"2\">\n" +
+                        "                <small id=\"bollinger-time-help\" class=\"form-text text-muted\">Times of standard deviation between the upper band and the moving averages. Type of float. min:1 max:6</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group bollinger-upper-bound-pct\">\n" +
+                        "                <label for=\"bollinger-upper-bound-pct\">Bollinger Upper Bound Percentage</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"bollinger-upper-bound-pct\" name=\"bollinger_upper_bound_pct\" aria-describedby=\"bollinger-upper-bound-pct-help\" value=\"0\">\n" +
+                        "                <small id=\"bollinger-upper-bound-pct-help\" class=\"form-text text-muted\"> Percentage of the current price should be near the bollinger upper bound before we sell. min:-1 max:30</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group bollinger-lower-bound-pct\">\n" +
+                        "                <label for=\"bollinger-lower-bound-pct\">Bollinger Lower Bound Percentage</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"bollinger-lower-bound-pct\" name=\"bollinger_lower_bound_pct\" aria-describedby=\"bollinger-lower-bound-pct-help\" value=\"0\">\n" +
+                        "                <small id=\"bollinger-lower-bound-pct-help\" class=\"form-text text-muted\"> Percentage of the current price should be near the bollinger lower bound before we buy. min:-1 max:30</small>\n" +
+                        "            </div>")
 
-            } else if(this.value === 'rsi') {
+            } else if (this.value === 'rsi') {
 
-                $(".neural-options").hide()
-                $(".macd-options").hide()
-                $(".bollinger-options").hide()
-                $(".rsi-options").show()
+                $(".neural-options").empty()
+                $(".macd-options").empty()
+                $(".bollinger-options").empty()
+                $(".rsi-options").append("<div class=\"rsi-options\">\n" +
+                        "            <div class=\"form-group min-periods\">\n" +
+                        "                <label for=\"min-periods-rsi\">Minimum Periods</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"min-periods-rsi\" name=\"min_periods\" aria-describedby=\"min-periods-help\" value=\"50\">\n" +
+                        "                <small id=\"min-periods-help\" class=\"form-text text-muted\">Minimum number of history periods min:1 </small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group rsi-period\">\n" +
+                        "                <label for=\"rsi-period\">RSI Period</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"rsi-period\" name=\"rsi_period\" aria-describedby=\"rsi-period-help\" value=\"14\">\n" +
+                        "                <small id=\"rsi-period-help\" class=\"form-text text-muted\">Number of RSI periods.</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group oversold-rsi\">\n" +
+                        "                <label for=\"oversold-rsi\">Oversold RSI</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"oversold-rsi\" name=\"oversold_rsi\" aria-describedby=\"oversold-rsi-help\" value=\"30\">\n" +
+                        "                <small id=\"oversold-rsi-help\" class=\"form-text text-muted\">Buys when RSI reaches or drops below this value.</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group overbought-rsi\">\n" +
+                        "                <label for=\"overbought-rsi\">Overbought RSI</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"overbought-rsi\" name=\"overbought_rsi\" aria-describedby=\"overbought-rsi-help\" value=\"82\">\n" +
+                        "                <small id=\"overbought-rsi-help\" class=\"form-text text-muted\">Sell when RSI reaches or goes above this value.</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group rsi-recover\">\n" +
+                        "                <label for=\"rsi-recover\">RSI Recover</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"rsi-recover\" name=\"rsi_recover\"  aria-describedby=\"rsi-recover-help\" value=\"3\">\n" +
+                        "                <small id=\"rsi-recover-help\" class=\"form-text text-muted\">Allow RSI to recover this many points before buying.</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group rsi-divisor\">\n" +
+                        "                <label for=\"rsi-divisor\">RSI Divisor</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"rsi-divisor\" name=\"rsi_divisor\" aria-describedby=\"rsi-divisor-help\" value=\"2\">\n" +
+                        "                <small id=\"rsi-divisor-help\" class=\"form-text text-muted\">sell when RSI reaches high-water divided by this value.</small>\n" +
+                        "            </div>\n" +
+                        "        </div>")
 
-            } else if(this.value === 'macd') {
-                $(".neural-options").hide()
-                $(".bollinger-options").hide()
-                $(".rsi-options").hide()
-                $(".macd-options").show()
+            } else if (this.value === 'macd') {
+                $(".neural-options").empty()
+                $(".bollinger-options").empty()
+                $(".rsi-options").empty()
+                $(".macd-options").append("<div class=\"form-group min-periods\">\n" +
+                        "                <label for=\"min-periods-macd\">Minimum Periods</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"min-periods-macd\" name=\"min_periods_macd\" aria-describedby=\"min-periods-help\" value=\"50\">\n" +
+                        "                <small id=\"min-periods-help\" class=\"form-text text-muted\">Periods to train neural network with from. min:1 max:200</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group ema-short-period\">\n" +
+                        "                <label for=\"ema-short-period\">EMA Short Period</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"ema-short-period\" name=\"ema_short_period\" aria-describedby=\"ema-short-period-help\" value=\"12\">\n" +
+                        "                <small id=\"ema-short-period-help\" class=\"form-text text-muted\">Number of periods for the shorter EMA. </small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group ema-long-period\">\n" +
+                        "                <label for=\"ema-long-period\">EMA Long Period</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"ema-long-period\" name=\"ema_long_period\" aria-describedby=\"ema-long-period-help\" value=\"26\">\n" +
+                        "                <small id=\"ema-long-period-help\" class=\"form-text text-muted\">Number of periods for the longer EMA. </small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group signal-period\">\n" +
+                        "                <label for=\"signal-period\">Signal Period</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"signal-period\" name=\"signal_period\" aria-describedby=\"signal-period-help\" value=\"9\">\n" +
+                        "                <small id=\"signal-period-help\" class=\"form-text text-muted\">Number of periods for the signal EMA. </small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group up-trend-threshold\">\n" +
+                        "                <label for=\"up-trend-threshold\">Up-trend Threshold</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"up-trend-threshold\" name=\"up_trend_threshold\" aria-describedby=\"up-trend-threshold-help\" value=\"0\">\n" +
+                        "                <small id=\"up-trend-threshold-help\" class=\"form-text text-muted\">Threshold to trigger a buy signal. </small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group down-trend-threshold\">\n" +
+                        "                <label for=\"down-trend-threshold\">Down-trend Threshold</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"down-trend-threshold\" name=\"down_trend_threshold\" aria-describedby=\"down-trend-threshold-help\" value=\"0\">\n" +
+                        "                <small id=\"down-trend-threshold-help\" class=\"form-text text-muted\">Threshold to trigger a sold signal. </small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group overbought-rsi\">\n" +
+                        "                <label for=\"overbought-rsi\">Overbought RSI</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"overbought-rsi\" name=\"overbought_rsi\" aria-describedby=\"overbought-rsi-help\" value=\"70\">\n" +
+                        "                <small id=\"overbought-rsi-help\" class=\"form-text text-muted\">Sell when RSI reaches or goes above this value.</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group overbought-rsi-periods\">\n" +
+                        "                <label for=\"overbought-rsi-periods\">Overbought RSI Periods</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"overbought-rsi-periods\" name=\"overbought_rsi_periods\" aria-describedby=\"overbought-rsi-periods-help\" value=\"25\">\n" +
+                        "                <small id=\"overbought-rsi-periods-help\" class=\"form-text text-muted\">Number of periods for overbought RSI.</small>\n" +
+                        "            </div>")
 
             }
         });
