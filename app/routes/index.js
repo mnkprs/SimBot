@@ -16,6 +16,7 @@ router.get('/', function (req, res, next) {
 
 router.post('/', function (req, res) {
     console.log('index post')
+    // console.log(req.body)
     boot(function (err, zenbot) {
         return new Promise(resolve => {
             sim(req.body,zenbot.conf).then((a) => {

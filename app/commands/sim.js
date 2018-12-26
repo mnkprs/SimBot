@@ -29,7 +29,7 @@ module.exports = function (opts, conf) {
             markdown_buy_pct: 0,
             markup_sell_pct: 0,
             order_type: 'maker',
-            days: 4,
+            days: 15,
             currency_capital: 1,
             asset_capital: 0,
             rsi_periods: 14 }
@@ -38,12 +38,18 @@ module.exports = function (opts, conf) {
         var s = {options: opts}
         var so = s.options
         delete so._
+
+        if (cmd.conf) {
+            var overrides = require(path.resolve(process.cwd(), cmd.conf))
+            Object.keys(overrides).forEach(function (k) {
+                so[k] = overrides[k]
+            })
+        }
         Object.keys(conf).forEach(function (k) {
             if (!_.isUndefined(cmd[k])) {
                 so[k] = cmd[k]
             }
         })
-        console.log(so)
         var tradesCollection = collectionService(conf).getTrades()
         var simResults = collectionService(conf).getSimResults()
         var eventBus = conf.eventBus
@@ -66,7 +72,6 @@ module.exports = function (opts, conf) {
         }
 
         so.days = moment(so.end).diff(moment(so.start), 'days')
-
         so.stats = !!cmd.enable_stats
         so.show_options = !cmd.disable_options
         so.verbose = !!cmd.verbose
@@ -173,7 +178,7 @@ module.exports = function (opts, conf) {
                 })
             }
             s.balance.currency = n(s.net_currency).add(n(s.period.close).multiply(s.balance.asset)).format('0.00000000')
-
+            console.log("s.balance.currency", s.balance.currency)
             s.balance.asset = 0
             s.lookback.unshift(s.period)
             var profit = s.start_capital ? n(s.balance.currency).subtract(s.start_capital).divide(s.start_capital) : n(0)

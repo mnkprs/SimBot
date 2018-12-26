@@ -1,7 +1,7 @@
 var z = require('zero-fill')
-  , n = require('numbro')
-  , rsi = require('../../../lib/rsi')
-  , Phenotypes = require('../../../lib/phenotype')
+    , n = require('numbro')
+    , rsi = require('../../../lib/rsi')
+    , Phenotypes = require('../../../lib/phenotype')
 
 module.exports = {
   name: 'rsi',
@@ -11,7 +11,7 @@ module.exports = {
     this.option('period', 'period length, same as --period_length', String, '2m')
     this.option('period_length', 'period length, same as --period', String, '2m')
     this.option('min_periods', 'min. number of history periods', Number, 52)
-    this.option('rsi_periods', 'number of RSI periods', 14)
+    this.option('rsi_periods', 'number of RSI periods', Number, 14)
     this.option('oversold_rsi', 'buy when RSI reaches or drops below this value', Number, 30)
     this.option('overbought_rsi', 'sell when RSI reaches or goes above this value', Number, 82)
     this.option('rsi_recover', 'allow RSI to recover this many points before buying', Number, 3)
@@ -26,7 +26,7 @@ module.exports = {
   onPeriod: function (s, cb) {
     if (s.in_preroll) return cb()
     if (typeof s.period.rsi === 'number') {
-      if (s.trend !== 'oversold' && s.trend !== 'long' && s.period.rsi <= s.options.oversold_rsi) {
+      if (s.trend === undefined && s.period.rsi <= s.options.oversold_rsi) {
         s.rsi_low = s.period.rsi
         s.trend = 'oversold'
       }

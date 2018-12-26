@@ -447,7 +447,7 @@ var withData = function (data, trades) {
     return t
   })
   trades.sort(function(a, b) { return d3.ascending(accessor.d(a), accessor.d(b)); });
-
+  console.log(trades)
   $('body').css('backgroundColor', '#1f2d35')
   x.domain(techan.scale.plot.time(data).domain());
   y.domain(techan.scale.plot.ohlc(data).domain());

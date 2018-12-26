@@ -1,19 +1,19 @@
 let tb = require('timebucket')
-  , moment = require('moment')
-  , z = require('zero-fill')
-  , n = require('numbro')
-  // eslint-disable-next-line no-unused-vars
-  , colors = require('colors')
-  , abbreviate = require('number-abbreviate')
-  , readline = require('readline')
-  , path = require('path')
-  , _ = require('lodash')
-  , notify = require('./notify')
-  , rsi = require('./rsi')
-  , async = require('async')
-  , lolex = require('lolex')
-  , { formatAsset, formatPercent, formatCurrency } = require('./format')
-  , debug = require('./debug')
+    , moment = require('moment')
+    , z = require('zero-fill')
+    , n = require('numbro')
+    // eslint-disable-next-line no-unused-vars
+    , colors = require('colors')
+    , abbreviate = require('number-abbreviate')
+    , readline = require('readline')
+    , path = require('path')
+    , _ = require('lodash')
+    , notify = require('./notify')
+    , rsi = require('./rsi')
+    , async = require('async')
+    , lolex = require('lolex')
+    , { formatAsset, formatPercent, formatCurrency } = require('./format')
+    , debug = require('./debug')
 
 let clock
 let nice_errors = new RegExp(/(slippage protection|loss protection)/)
@@ -305,6 +305,14 @@ module.exports = function (s, conf) {
     })
   }
 
+  function isOrderTooSmall(product, quantity, price) {
+    if (product.min_size && Number(quantity) < Number(product.min_size))
+      return true
+    if (product.min_total && n(quantity).multiply(price).value() < Number(product.min_total))
+      return true
+    return false
+  }
+
   // if s.signal
   // 1. sync balance
   // 2. get quote
@@ -395,7 +403,7 @@ module.exports = function (s, conf) {
           size = n(trade_balance).subtract(expected_fee).divide(price).format(s.product.asset_increment ? s.product.asset_increment : '0.00000000')
         }
 
-        if ((s.product.min_size && Number(size) >= Number(s.product.min_size)) || ('min_total' in s.product && s.product.min_total && n(size).multiply(price).value() >= Number(s.product.min_total))) {
+        if (!isOrderTooSmall(s.product, size, price)) {
           if (s.product.max_size && Number(size) > Number(s.product.max_size)) {
             size = s.product.max_size
           }
@@ -425,7 +433,9 @@ module.exports = function (s, conf) {
               }, conf.wait_for_settlement)
             }
             else {
-              pushMessage('Buying ' + formatAsset(size, s.asset) + ' on ' + s.exchange.name.toUpperCase(), 'placing buy order at ' + formatCurrency(price, s.currency) + ', ' + formatCurrency(quote.bid - Number(price), s.currency) + ' under best bid\n')
+              if(conf.notifiers && !conf.notifiers.only_completed_trades){
+                pushMessage('Buying ' + formatAsset(size, s.asset) + ' on ' + s.exchange.name.toUpperCase(), 'placing buy order at ' + formatCurrency(price, s.currency) + ', ' + formatCurrency(quote.bid - Number(price), s.currency) + ' under best bid\n')
+              }
               doOrder()
             }
           }
@@ -444,7 +454,7 @@ module.exports = function (s, conf) {
         }
         size = n(s.balance.asset).multiply(sell_pct / 100).format(s.product.asset_increment ? s.product.asset_increment : '0.00000000')
 
-        if ((s.product.min_size && Number(size) >= Number(s.product.min_size)) || (s.product.min_total && n(size).multiply(price).value() >= Number(s.product.min_total))) {
+        if (!isOrderTooSmall(s.product, size, price)) {
           if (s.product.max_size && Number(size) > Number(s.product.max_size)) {
             size = s.product.max_size
           }
@@ -473,7 +483,9 @@ module.exports = function (s, conf) {
               }, conf.wait_for_settlement)
             }
             else {
-              pushMessage('Selling ' + formatAsset(size, s.asset) + ' on ' + s.exchange.name.toUpperCase(), 'placing sell order at ' + formatCurrency(price, s.currency) + ', ' + formatCurrency(Number(price) - quote.bid, s.currency) + ' over best ask\n')
+              if(conf.notifiers && !conf.notifiers.only_completed_trades){
+                pushMessage('Selling ' + formatAsset(size, s.asset) + ' on ' + s.exchange.name.toUpperCase(), 'placing sell order at ' + formatCurrency(price, s.currency) + ', ' + formatCurrency(Number(price) - quote.bid, s.currency) + ' over best ask\n')
+              }
               doOrder()
             }
           }
@@ -538,8 +550,7 @@ module.exports = function (s, conf) {
         if (s.exchange.makerFee) {
           fee = n(s.buy_order.size).multiply(s.exchange.makerFee / 100).value()
         }
-      }
-      if (so.order_type === 'taker') {
+      } else if (so.order_type === 'taker') {
         if (s.exchange.takerFee) {
           fee = n(s.buy_order.size).multiply(s.exchange.takerFee / 100).value()
         }
@@ -904,7 +915,7 @@ module.exports = function (s, conf) {
       return
     }
     var day = (new Date(trade.time)).getDate()
-    if (s.last_day && s.last_day && day !== s.last_day) {
+    if (s.last_day && day !== s.last_day) {
       s.day_count++
     }
     s.last_day = day
