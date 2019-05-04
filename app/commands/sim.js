@@ -29,7 +29,7 @@ module.exports = function (opts, conf) {
             markdown_buy_pct: 0,
             markup_sell_pct: 0,
             order_type: 'maker',
-            days: 15,
+            days: 7,
             currency_capital: 1,
             asset_capital: 0,
             rsi_periods: 14 }
@@ -182,15 +182,15 @@ module.exports = function (opts, conf) {
             s.balance.asset = 0
             s.lookback.unshift(s.period)
             var profit = s.start_capital ? n(s.balance.currency).subtract(s.start_capital).divide(s.start_capital) : n(0)
-            output_lines.push('end balance: ' + n(s.balance.currency).format('0.00000000').yellow + ' (' + profit.format('0.00%') + ')')
+            output_lines.push('end balance: ' + n(s.balance.currency).format('0.00000000') + ' (' + profit.format('0.00%') + ')')
             //console.log('start_capital', s.start_capital)
             //console.log('start_price', n(s.start_price).format('0.00000000'))
             //console.log('close', n(s.period.close).format('0.00000000'))
             var buy_hold = s.start_price ? n(s.period.close).multiply(n(s.start_capital).divide(s.start_price)) : n(s.balance.currency)
             //console.log('buy hold', buy_hold.format('0.00000000'))
             var buy_hold_profit = s.start_capital ? n(buy_hold).subtract(s.start_capital).divide(s.start_capital) : n(0)
-            output_lines.push('buy hold: ' + buy_hold.format('0.00000000').yellow + ' (' + n(buy_hold_profit).format('0.00%') + ')')
-            output_lines.push('vs. buy hold: ' + n(s.balance.currency).subtract(buy_hold).divide(buy_hold).format('0.00%').yellow)
+            output_lines.push('buy hold: ' + buy_hold.format('0.00000000') + ' (' + n(buy_hold_profit).format('0.00%') + ')')
+            output_lines.push('vs. buy hold: ' + n(s.balance.currency).subtract(buy_hold).divide(buy_hold).format('0.00%'))
             output_lines.push(s.my_trades.length + ' trades over ' + s.day_count + ' days (avg ' + n(s.my_trades.length / s.day_count).format('0.00') + ' trades/day)')
             var last_buy
             var losses = 0, sells = 0
@@ -207,7 +207,7 @@ module.exports = function (opts, conf) {
             })
             if (s.my_trades.length) {
                 output_lines.push('win/loss: ' + (sells - losses) + '/' + losses)
-                output_lines.push('error rate: ' + (sells ? n(losses).divide(sells).format('0.00%') : '0.00%').yellow)
+                output_lines.push('error rate: ' + (sells ? n(losses).divide(sells).format('0.00%') : '0.00%'))
             }
             options_output.simresults.start_capital = s.start_capital
             options_output.simresults.last_buy_price = s.last_buy_price
@@ -252,7 +252,31 @@ module.exports = function (opts, conf) {
                 var code = 'var data = ' + JSON.stringify(data) + ';\n'
                 code += 'var trades = ' + JSON.stringify(s.my_trades) + ';\n'
                 var tpl = fs.readFileSync(path.resolve(__dirname, '..', 'templates', 'sim_result.html.tpl'), {encoding: 'utf8'})
+                var testdata = 'var testdata = ' + output_lines + ';\n'
+
+                // console.log(output_lines);
+                // console.log(testdata);
+
+                var test = '<ul class="list-group">\n' +
+                    '    <li class="list-group-item">' + output_lines[0] +'</li>\n' +
+                    '    <li class="list-group-item">' + output_lines[1] +'</li>\n' +
+                    '    <li class="list-group-item">' + output_lines[2] +'</li>\n' +
+                    '    <li class="list-group-item">' + output_lines[3] +'</li>\n' +
+                    '    <li class="list-group-item">' + output_lines[4] +'</li>\n' +
+                    '    <li class="list-group-item">' + output_lines[5] +'</li>\n' +
+                    '  </ul>'
+
+                test += '<ul class="list-group">'
+                s.my_trades.forEach(function (line,index) {
+                    test += '<li class="list-group-item">' + 'Trade: ' + parseInt(index+1) +
+                        '  Type: ' + line.type +
+                        '  Fee: ' +  line.fee +
+                        '  Size: ' + line.size +'</li>\n'
+                })
+                test += '</ul>'
+
                 var out = tpl
+                    .replace('{{test}}', test)
                     .replace('{{code}}', code)
                     .replace('{{trend_ema_period}}', so.trend_ema || 36)
                     .replace('{{output}}', html_output)
