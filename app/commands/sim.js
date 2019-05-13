@@ -28,8 +28,8 @@ module.exports = function (opts, conf) {
             order_poll_time: 5000,
             markdown_buy_pct: 0,
             markup_sell_pct: 0,
-            order_type: 'maker',
-            days: 7,
+            order_type: 'taker',
+            days: 15,
             currency_capital: 1,
             asset_capital: 0,
             rsi_periods: 14 }
@@ -280,7 +280,7 @@ module.exports = function (opts, conf) {
                     .replace('{{code}}', code)
                     .replace('{{trend_ema_period}}', so.trend_ema || 36)
                     .replace('{{output}}', html_output)
-                    .replace(/\{\{symbol\}\}/g, so.selector.normalized + ' - zenbot ' + require('../package.json').version)
+                    .replace(/\{\{symbol\}\}/g, so.selector.normalized)
                 var out_target = so.filename || 'simulations/sim_result_' + so.selector.normalized + '_' + new Date().toISOString().replace(/T/, '_').replace(/\..+/, '').replace(/-/g, '').replace(/:/g, '').replace(/20/, '') + '_UTC.html'
                 fs.writeFileSync(out_target, out)
                 console.log('wrote', out_target)
