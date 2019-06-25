@@ -93,7 +93,7 @@ module.exports = function (s, conf) {
   s.my_trades = []
   s.my_prev_trades = []
   s.vol_since_last_blink = 0
-  if (conf.output.api.on) {
+  if (so.mode !== 'sim' && conf.output.api.on) {
     s.boot_time = (new Date).getTime()
     s.tz_offset = new Date().getTimezoneOffset()
     s.last_trade_id = 0

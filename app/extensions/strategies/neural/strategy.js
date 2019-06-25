@@ -155,6 +155,7 @@ module.exports = {
     momentum: Phenotypes.RangeFloat(0, 1),
     decay: Phenotypes.RangeFloat(0, 1),
     learns: Phenotypes.Range(1, 500),
+    threads: Phenotypes.Range(1, 10),
     learningrate: Phenotypes.RangeFloat(0, 1)
   }
 }

@@ -7,13 +7,16 @@ var tb = require('timebucket')
     , colors = require('colors')
     , objectifySelector = require('../lib/objectify-selector')
     , engineFactory = require('../lib/engine')
+    , output = require('../lib/output')
     , collectionService = require('../lib/services/collection-service')
     , _ = require('lodash')
 
 
 module.exports = function (opts, conf) {
     return new Promise(resolve => {
-
+        conf.strategy = opts.strategy
+        conf.selector = opts.selector
+        conf.output.api.on = true
         var cmd = { strategy: opts.strategy,
             sell_stop_pct: 0,
             buy_stop_pct: 0,
@@ -29,10 +32,11 @@ module.exports = function (opts, conf) {
             markdown_buy_pct: 0,
             markup_sell_pct: 0,
             order_type: 'taker',
-            days: 15,
+            days: 7,
             currency_capital: 1,
             asset_capital: 0,
             rsi_periods: 14 }
+            // console.log(opts)
         var selector = opts.selector
         var handler
         var s = {options: opts}
@@ -72,12 +76,12 @@ module.exports = function (opts, conf) {
         }
 
         so.days = moment(so.end).diff(moment(so.start), 'days')
-        so.stats = !!cmd.enable_stats
-        so.show_options = !cmd.disable_options
-        so.verbose = !!cmd.verbose
+        // so.stats = !!cmd.enable_stats
+        // so.show_options = !cmd.disable_options
+        // so.verbose = !!cmd.verbose
         so.selector = objectifySelector(selector || conf.selector)
         so.mode = 'sim'
-
+        // console.log(conf)
         var engine = engineFactory(s, conf)
         if (!so.min_periods) so.min_periods = 1
         var cursor, reversing, reverse_point
