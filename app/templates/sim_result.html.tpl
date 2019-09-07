@@ -10,7 +10,7 @@ html {
 
 body {
   font: 10px sans-serif;
-  background-color: #1f2d35;
+  background-color: #fff;
   color: #888;
   position: relative;
 }
@@ -459,7 +459,7 @@ pre {
       })
       trades.sort(function(a, b) { return d3.ascending(accessor.d(a), accessor.d(b)); });
       console.log(trades)
-      $('body').css('backgroundColor', '#1f2d35')
+      $('body').css('backgroundColor', '#fff')
       x.domain(techan.scale.plot.time(data).domain());
       y.domain(techan.scale.plot.ohlc(data).domain());
       yPercent.domain(techan.scale.plot.percent(y, accessor(data[0])).domain());

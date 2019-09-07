@@ -8,6 +8,7 @@ var tb = require('timebucket')
     , objectifySelector = require('../lib/objectify-selector')
     , engineFactory = require('../lib/engine')
     , output = require('../lib/output')
+    , jsonexport = require('jsonexport')
     , collectionService = require('../lib/services/collection-service')
     , _ = require('lodash')
 
@@ -33,6 +34,7 @@ module.exports = function (opts, conf) {
             markup_sell_pct: 0,
             order_type: 'taker',
             days: 7,
+            post_only: true,
             currency_capital: 1,
             asset_capital: 0,
             rsi_periods: 14 }
@@ -183,6 +185,7 @@ module.exports = function (opts, conf) {
             }
             s.balance.currency = n(s.net_currency).add(n(s.period.close).multiply(s.balance.asset)).format('0.00000000')
             console.log("s.balance.currency", s.balance.currency)
+            console.log("s.net.currency", s.net_currency)
             s.balance.asset = 0
             s.lookback.unshift(s.period)
             var profit = s.start_capital ? n(s.balance.currency).subtract(s.start_capital).divide(s.start_capital) : n(0)
@@ -215,7 +218,7 @@ module.exports = function (opts, conf) {
             }
             options_output.simresults.start_capital = s.start_capital
             options_output.simresults.last_buy_price = s.last_buy_price
-            options_output.simresults.last_assest_value = s.trades[s.trades.length-1].price
+            options_output.simresults.last_assest_value = s.period.close
             options_output.net_currency = s.net_currency
             options_output.simresults.asset_capital = s.asset_capital
             options_output.simresults.currency = n(s.balance.currency).value()
@@ -238,8 +241,14 @@ module.exports = function (opts, conf) {
             // })
 
             if (so.backtester_generation >= 0) {
-                fs.writeFileSync(path.resolve(__dirname, '..', 'simulations', 'sim_' + so.strategy.replace('_', '') + '_' + so.selector.normalized.replace('_', '').toLowerCase() + '_' + so.backtester_generation + '.json'), options_json, {encoding: 'utf8'})
-            }
+                var file_name = so.strategy.replace('_','')+'_'+ so.selector.normalized.replace('_','').toLowerCase()+'_'+so.backtester_generation
+                fs.writeFileSync(path.resolve(__dirname, '..', 'simulations','sim_'+file_name+'.json'),options_json, {encoding: 'utf8'})
+                var trades_json = JSON.stringify(s.my_trades, null, 2)
+                fs.writeFileSync(path.resolve(__dirname, '..', 'simulations','sim_trades_'+file_name+'.json'),trades_json, {encoding: 'utf8'})
+                jsonexport(s.my_trades,function(err, csv){
+                    if(err) return console.log(err)
+                    fs.writeFileSync(path.resolve(__dirname, '..', 'simulations','sim_trades_'+file_name+'.csv'),csv, {encoding: 'utf8'})
+                })            }
 
             if (so.filename !== 'none') {
                 var html_output = output_lines.map(function (line) {
