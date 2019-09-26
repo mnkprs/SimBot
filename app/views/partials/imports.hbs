@@ -20,7 +20,12 @@
                 $(".bollinger-options").empty()
                 $(".macd-options").empty()
                 $(".rsi-options").empty()
-                $(".neural-options").append(" <div class=\"form-group neurons-1\">\n" +
+                $(".neural-options").append("<div class=\"form-group min-periods\">\n" +
+                        "                <label for=\"min-periods-macd\">Minimum Periods</label>\n" +
+                        "                <input type=\"text\" class=\"form-control\" id=\"min-periods-macd\" name=\"min_periods_macd\" aria-describedby=\"min-periods-help\" value=\"50\">\n" +
+                        "                <small id=\"min-periods-help\" class=\"form-text text-muted\">Periods to train neural network with from. min:1 max:200</small>\n" +
+                        "            </div>\n" +
+                        "            <div class=\"form-group neurons-1\">\n" +
                         "                <label for=\"neurons-1\">Neurons 1</label>\n" +
                         "                <input type=\"text\" class=\"form-control\" id=\"neurons-1\" name=\"neurons_1\" aria-describedby=\"neurons-1-help\" value=\"5\">\n" +
                         "                <small id=\"neurons-1-help\" class=\"form-text text-muted\"> Neurons in layer 1. min:1 max:20</small>\n" +
@@ -47,11 +52,6 @@
                         "                        <option value=\"relu\">relu</option>\n" +
                         "                </select>\n" +
                         "                <small id=\"activation_2_type-help\" class=\"form-text text-muted\">Activation type for neurons in layer 2.</small>\n" +
-                        "            </div>\n" +
-                        "            <div class=\"form-group min-periods\">\n" +
-                        "                <label for=\"min-periods\">Minimum Periods</label>\n" +
-                        "                <input type=\"text\" class=\"form-control\" id=\"min-periods\" name=\"min_periods\" aria-describedby=\"min-periods-help\" value=\"50\">\n" +
-                        "                <small id=\"min-periods-help\" class=\"form-text text-muted\">Periods to train neural network with from. min:1 max:200</small>\n" +
                         "            </div>\n" +
                         "            <div class=\"form-group min-predict\">\n" +
                         "                <label for=\"min-predict\">Minimum Prediction</label>\n" +
@@ -157,11 +157,7 @@
                 $(".neural-options").empty()
                 $(".bollinger-options").empty()
                 $(".rsi-options").empty()
-                $(".macd-options").append("<div class=\"form-group min-periods\">\n" +
-                        "                <label for=\"min-periods-macd\">Minimum Periods</label>\n" +
-                        "                <input type=\"text\" class=\"form-control\" id=\"min-periods-macd\" name=\"min_periods_macd\" aria-describedby=\"min-periods-help\" value=\"50\">\n" +
-                        "                <small id=\"min-periods-help\" class=\"form-text text-muted\">Periods to train neural network with from. min:1 max:200</small>\n" +
-                        "            </div>\n" +
+                $(".macd-options").append(
                         "            <div class=\"form-group ema-short-period\">\n" +
                         "                <label for=\"ema-short-period\">EMA Short Period</label>\n" +
                         "                <input type=\"text\" class=\"form-control\" id=\"ema-short-period\" name=\"ema_short_period\" aria-describedby=\"ema-short-period-help\" value=\"12\">\n" +
