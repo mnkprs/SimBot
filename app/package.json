@@ -40,7 +40,7 @@
     "progress": "^2.0.0",
     "random-port": "^0.1.0",
     "read-line": "^0.1.2",
-    "shelljs": "^0.8.2",
+    "shelljs": "^0.8.5",
     "static-favicon": "~1.0.0",
     "timebucket": "^0.4.0",
     "zero-fill": "^2.2.3"
