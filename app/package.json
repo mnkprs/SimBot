@@ -31,7 +31,7 @@
     "lodash": "^4.17.13",
     "lolex": "^2.3.2",
     "minimist": "^1.2.0",
-    "moment": "^2.22.1",
+    "moment": "^2.29.2",
     "mongodb": "^3.0.7",
     "morgan": "^1.9.1",
     "number-abbreviate": "^2.0.0",
