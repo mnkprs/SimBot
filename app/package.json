@@ -6,7 +6,7 @@
     "start": "nodemon app.js"
   },
   "dependencies": {
-    "async": "^2.6.0",
+    "async": "^2.6.4",
     "body-parser": "^1.18.3",
     "bollinger-bands": "^3.0.1",
     "ccxt": "^1.13.101",
