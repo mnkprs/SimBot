@@ -19,7 +19,7 @@
     "debug": "~2.6.9",
     "ejs": "^2.5.8",
     "events": "^2.0.0",
-    "express": "~4.16.0",
+    "express": "~4.17.3",
     "express-rate-limit": "^4.0.0",
     "forex.analytics": "^0.0.15",
     "fs": "0.0.1-security",
